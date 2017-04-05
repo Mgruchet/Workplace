@@ -19,7 +19,8 @@
 /*--------------------
 ---------------------*/
 * {
-  font-family: "brandon_grotesquemedium";
+  font-family: "Work Sans";
+  font-weight: 400;
 }
 
 body {
@@ -55,7 +56,6 @@ body {
   text-align: center;
   text-decoration: none;
   transition: ease-in-out 0.3s;
-  width: 200px;
 }
 
 .btn_modification:hover {
@@ -338,7 +338,6 @@ body {
 
 .aside-left .title {
   font-size: 16px;
-  font-family: "brandon_grotesqueblack";
   letter-spacing: 5px;
   margin: 0;
   margin-top: 25px;
@@ -353,6 +352,7 @@ body {
 
 .aside-left .title a {
   color: white;
+  font-family: "brandon_grotesqueblack";
   text-decoration: none;
 }
 
@@ -419,6 +419,7 @@ body {
   color: white;
   line-height: 80px;
   float: right;
+  font-family: "brandon_grotesquemedium";
   margin: 0;
   margin-right: 5px;
   text-transform: uppercase;
@@ -467,6 +468,7 @@ body {
 
 .contenue--profile .show--profile .content__text .text--profile span {
   color: #f39468;
+  font-family: "brandon_grotesquemedium";
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -480,6 +482,7 @@ body {
 .contenue--profile .show--profile .content__btn .btn_modification {
   float: left;
   margin-right: 20px;
+  padding: 0 20px;
 }
 
 .contenue--profile .show--profile .content__btn:after {
@@ -488,27 +491,36 @@ body {
   display: table;
 }
 
-.contenue--profile .show--profile .form .form_champ div {
+.contenue--profile .show--profile .form .champ {
   position: relative;
   float: left;
   width: 50%;
   margin-top: 20px;
 }
 
-.contenue--profile .show--profile .form .form_champ div:first-child {
+.contenue--profile .show--profile .form .picture {
   background-color: transparent;
   border: 2px solid #1072EA;
   height: 60px;
   margin-bottom: 30px;
   margin-left: 25px;
+  position: relative;
   width: 95%;
 }
 
-.contenue--profile .show--profile .form .form_champ div:first-child label {
-  display: none;
+.contenue--profile .show--profile .form .picture span {
+  color: white;
+  line-height: 60px;
+  padding-left: 30px;
 }
 
-.contenue--profile .show--profile .form .form_champ input[type=email] {
+.contenue--profile .show--profile .form .btn_submit {
+  float: left;
+  margin-top: 0px;
+  margin-left: 100px;
+}
+
+.contenue--profile .show--profile .form input[type=email] {
   background: transparent;
   border: 1px solid #1072EA;
   color: #1072EA;
@@ -522,7 +534,7 @@ body {
   width: 90%;
 }
 
-.contenue--profile .show--profile .form .form_champ input[type=text] {
+.contenue--profile .show--profile .form input[type=text] {
   background: transparent;
   border: 1px solid #1072EA;
   color: #1072EA;
@@ -536,7 +548,7 @@ body {
   width: 90%;
 }
 
-.contenue--profile .show--profile .form .form_champ input[type=number] {
+.contenue--profile .show--profile .form input[type=number] {
   background: transparent;
   border: 1px solid #1072EA;
   color: #1072EA;
@@ -550,7 +562,7 @@ body {
   width: 90%;
 }
 
-.contenue--profile .show--profile .form .form_champ input[type=password] {
+.contenue--profile .show--profile .form input[type=password] {
   background: transparent;
   border: 1px solid #1072EA;
   color: #1072EA;
@@ -564,7 +576,7 @@ body {
   width: 90%;
 }
 
-.contenue--profile .show--profile .form .form_champ input[type=file] {
+.contenue--profile .show--profile .form input[type=file] {
   position: absolute;
   top: 0;
   right: 0;
@@ -577,7 +589,7 @@ body {
   opacity: 0;
 }
 
-.contenue--profile .show--profile .form .form_champ label {
+.contenue--profile .show--profile .form label {
   color: white;
   position: absolute;
   left: 25px;

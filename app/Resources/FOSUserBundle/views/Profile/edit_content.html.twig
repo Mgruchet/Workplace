@@ -15,29 +15,62 @@
     <section class="contenue--profile">
       <article class="show--profile">
         <h3 class="title--profile">Modifier votre Profil</h3>
-      <!--{{ form_start(form, { 'action': path('fos_user_profile_edit'), 'attr': { 'class': 'form' } }) }}
-            {{ form_widget(form, { 'attr': {'class': 'form_champ' }}) }}
-              <div class="btn_submit">
-                <input class="btn_modification" type="submit" value="{{ 'profile.edit.submit'|trans }}" />
-              </div>
+        {{ form_start(form, { 'action': path('fos_user_profile_edit'), 'attr': { 'class': 'form' } }) }}
+            <div class="picture">
+                {{ form_errors(form.picture) }}
+                {{ form_widget(form.picture) }}
+                <span>Changer votre photo de profile</span>
+            </div>
 
-        {{ form_end(form) }}-->
-
-
-        <form action="{{ path("fos_user_profile_edit") }}" method="post" class="form">
-            {% if csrf_token %}
-                <input type="hidden" name="_csrf_token" value="{{ s }}" />
-            {% endif %}
-
-
-            <input type="text" id="username" name="_username" required="required" class="champ_form" placeholder="{{ 'security.login.username'|trans }}"/>
-            <input type="password" id="password" name="_password" required="required" class="champ_form" placeholder="{{ 'security.login.password'|trans }}"/>
-
-            <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
-            <label class="remember" for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
-
-            <input type="submit" class="btn_connection" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
-        </form>
+            <div class="champ">
+              {{form_label(form.username)}}
+              {{ form_errors(form.username) }}
+              {{ form_widget(form.username) }}
+            </div>
+            <div class="champ">
+              {{form_label(form.firstname)}}
+              {{ form_errors(form.firstname) }}
+              {{ form_widget(form.firstname) }}
+            </div>
+            <div class="champ">
+              {{form_label(form.email)}}
+              {{ form_errors(form.email) }}
+              {{ form_widget(form.email) }}
+            </div>
+            <div class="champ">
+              {{form_label(form.tel)}}
+              {{ form_errors(form.tel) }}
+              {{ form_widget(form.tel) }}
+            </div>
+            <div class="champ">
+              {{form_label(form.adresse)}}
+              {{ form_errors(form.adresse) }}
+              {{ form_widget(form.adresse) }}
+            </div>
+            <div class="champ">
+              {{form_label(form.cp)}}
+              {{ form_errors(form.cp) }}
+              {{ form_widget(form.cp) }}
+            </div>
+            <div class="champ">
+              {{form_label(form.town)}}
+              {{ form_errors(form.town) }}
+              {{ form_widget(form.town) }}
+            </div>
+            <div class="champ">
+              {{form_label(form.country)}}
+              {{ form_errors(form.country) }}
+              {{ form_widget(form.country) }}
+            </div>
+            <div class="champ">
+              {{form_label(form.birthday)}}
+              {{ form_errors(form.birthday) }}
+              {{ form_widget(form.birthday) }}
+            </div>
+            <div class="btn_submit">
+              <input class="btn_modification" type="submit" value="{{ 'profile.edit.submit'|trans }}" />
+            </div>
+          {{ form_end(form) }}
       </article>
     </section>
 
