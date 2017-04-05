@@ -441,6 +441,10 @@ body{
           float: left;
           width: 50%;
           margin-top: 20px;
+          label{
+            color: white;
+            padding-left: 25px;
+          }
         }
         .picture{
           background-color: transparent;
@@ -526,12 +530,7 @@ body{
           cursor: pointer;
           opacity: 0;
         }
-        label{
-          color: white;
-          position: absolute;
-          left: 25px;
-          bottom: 90px;
-        }
+
     }
     &:after{
       clear: both;
