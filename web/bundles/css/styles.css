@@ -488,15 +488,24 @@ body {
   display: table;
 }
 
-.contenue--profile .show--profile .form {
-  text-align: center;
-}
-
 .contenue--profile .show--profile .form .form_champ div {
   position: relative;
   float: left;
   width: 50%;
   margin-top: 20px;
+}
+
+.contenue--profile .show--profile .form .form_champ div:first-child {
+  background-color: transparent;
+  border: 2px solid #1072EA;
+  height: 60px;
+  margin-bottom: 30px;
+  margin-left: 25px;
+  width: 95%;
+}
+
+.contenue--profile .show--profile .form .form_champ div:first-child label {
+  display: none;
 }
 
 .contenue--profile .show--profile .form .form_champ input[type=email] {
@@ -553,6 +562,19 @@ body {
   outline: none;
   padding-left: 15px;
   width: 90%;
+}
+
+.contenue--profile .show--profile .form .form_champ input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0;
 }
 
 .contenue--profile .show--profile .form .form_champ label {

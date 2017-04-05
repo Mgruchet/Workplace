@@ -2,35 +2,10 @@
 {% block body %}
 {% trans_default_domain 'FOSUserBundle' %}
 
-
-  <header class=" container header">
-    <section class="header--user">
-      <a href="{{path('fos_user_security_logout')}}" class="disconect--user"><i class="material-icons">power_settings_new</i></a>
-      <p class="text--user">{{ user.username }}</p>
-      <p class="text--user">{{ user.firstname}}</p>
-      <div class="img--user">
-        <img src="{{ asset('bundles/images/img.jpg') }}" alt="img-profil">
-      </div>
-    </section>
-  </header>
+{% include 'header.html.twig' %}
 
   <section>
-    <aside class="aside-left">
-      <div class="header-aside">
-          <h1 class="title"><img src="{{asset('bundles/images/logo.png')}}" alt="image_logo" class="logo"><a href="{{ path('index') }}">Workplace</a></h1>
-      </div>
-      <article class="sidebar">
-          <nav class="menu_aside">
-              <ul>
-                  <li><a class="active" href="{{path('fos_user_profile_show')}}"><i class="material-icons">face</i>Profil</a></li>
-                  <li><a href="#!"><i class="material-icons">group</i>Clients</a></li>
-                  <li><a href="#!"><i class="material-icons">folder</i>Projets</a></li>
-                  <li><a href="#!"><i class="material-icons">insert_drive_file</i>Factures et devis</a></li>
-                  <li><a href="#!"><i class="material-icons">pie_chart</i>Graphique</a></li>
-              </ul>
-          </nav>
-      </article>
-    </aside>
+  {% include 'aside.html.twig' %}
     <div class="container">
       <section class="contenue--profile">
         <article class="show--profile">
