@@ -46,3 +46,4 @@
 !/vendor/friendsofsymfony/user-bundle/Form
 
 *.DS_Store
+composer.phar
