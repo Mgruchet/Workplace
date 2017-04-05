@@ -6,6 +6,7 @@ use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 
+
 class LoadClientData extends AbstractFixture implements OrderedFixtureInterface
 {
     public function load(ObjectManager $manager)
@@ -19,15 +20,15 @@ class LoadClientData extends AbstractFixture implements OrderedFixtureInterface
         $client1->setVille("Rennes");
         $client1->setCodePostal("35000");
         $client1->setTel("0254789564");
-        
+
         // Ajoute l'utilisateur dans Doctrine
         $manager->persist($client1);
-        
+
         // Conserve une référence à l'utilisateur
         $this->addReference('client1', $client1);
-        
-        
-        
+
+
+
                 // Création d'un nouvel utilisateur
         $client2 = new \MG\GestionBundle\Entity\clients();
         $client2->setNom("Doe");
@@ -37,15 +38,15 @@ class LoadClientData extends AbstractFixture implements OrderedFixtureInterface
         $client2->setVille("Saint-Malo");
         $client2->setCodePostal("35400");
         $client2->setTel("0287964853");
-        
+
         // Ajoute l'utilisateur dans Doctrine
         $manager->persist($client2);
-        
+
         // Conserve une référence à l'utilisateur
         $this->addReference('client2', $client2);
-        
-        
-        
+
+
+
                 // Création d'un nouvel utilisateur
         $client3 = new \MG\GestionBundle\Entity\clients();
         $client3->setNom("Peyrouny");
@@ -55,15 +56,15 @@ class LoadClientData extends AbstractFixture implements OrderedFixtureInterface
         $client3->setVille("Paris");
         $client3->setCodePostal("75001");
         $client3->setTel("0244631245");
-        
+
         // Ajoute l'utilisateur dans Doctrine
         $manager->persist($client3);
-        
+
         // Conserve une référence à l'utilisateur
         $this->addReference('client3', $client3);
-        
-        
-        
+
+
+
         // Executer les requêtes SQL
         $manager->flush();
     }
