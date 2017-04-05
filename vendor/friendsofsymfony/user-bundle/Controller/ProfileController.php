@@ -61,11 +61,7 @@ class ProfileController extends Controller
             throw new AccessDeniedException('This user does not have access to this section.');
         }
 
-        $csrfToken = $this->has('security.csrf.token_manager')
-            ? $this->get('security.csrf.token_manager')->getToken('authenticate')->getValue()
-            : null;
-
-        $picture = new \Symfony\Component\HttpFoundation\File\File('bundles/images/' . $user->getPicture());
+        $picture = new \Symfony\Component\HttpFoundation\File\File($this->getParameter('images_directory') . '/' . $user->getPicture());
         $user->setPicture($picture);
 
         /** @var $dispatcher EventDispatcherInterface */
@@ -117,7 +113,7 @@ class ProfileController extends Controller
         }
 
         return $this->render('@FOSUser/Profile/edit.html.twig', array(
-            'form' => $form->createView(),'user' => $user,
+            'form' => $form->createView()
         ));
     }
 

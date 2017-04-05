@@ -1,10 +1,10 @@
 <header class=" container header">
   <section class="header--user">
     <a href="{{path('fos_user_security_logout')}}" class="disconect--user"><i class="material-icons">power_settings_new</i></a>
-    <p class="text--user">{{ user.username }}</p>
-    <p class="text--user">{{ user.firstname}}</p>
+    <p class="text--user">{{ app.user.username }}</p>
+    <p class="text--user">{{ app.user.firstname}}</p>
     <div class="img--user">
-      <img src="{{ asset('/bundles/images/' ~ user.picture) }}" alt="img-profil">
+      <img src="{{ asset('/bundles/images/' ~ app.user.picture) }}" alt="img-profil">
     </div>
   </section>
 </header>
