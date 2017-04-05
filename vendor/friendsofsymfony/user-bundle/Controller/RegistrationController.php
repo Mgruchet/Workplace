@@ -70,16 +70,6 @@ class RegistrationController extends Controller
 
                 $userManager->updateUser($user);
 
-                $file = $user->getPicture();
-                $fileName = md5(uniqid()).'.'.$file->guessExtension();
-
-                $file->move(
-                    $this->getParameter('images_directory'),
-                    $fileName
-                );
-
-                 $user->setPicture($fileName);
-
                 if (null === $response = $event->getResponse()) {
                     $url = $this->generateUrl('fos_user_registration_confirmed');
                     $response = new RedirectResponse($url);

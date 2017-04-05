@@ -61,13 +61,6 @@ class ProfileController extends Controller
             throw new AccessDeniedException('This user does not have access to this section.');
         }
 
-        $csrfToken = $this->has('security.csrf.token_manager')
-            ? $this->get('security.csrf.token_manager')->getToken('authenticate')->getValue()
-            : null;
-
-        $picture = new \Symfony\Component\HttpFoundation\File\File('bundles/images/' . $user->getPicture());
-        $user->setPicture($picture);
-
         /** @var $dispatcher EventDispatcherInterface */
         $dispatcher = $this->get('event_dispatcher');
 
@@ -88,17 +81,6 @@ class ProfileController extends Controller
 
         if ($form->isSubmitted() && $form->isValid()) {
             /** @var $userManager UserManagerInterface */
-
-            $file = $user->getPicture();
-            $fileName = md5(uniqid()).'.'.$file->guessExtension();
-
-            $file->move(
-                $this->getParameter('images_directory'),
-                $fileName
-            );
-
-             $user->setPicture($fileName);
-
             $userManager = $this->get('fos_user.user_manager');
 
             $event = new FormEvent($form, $request);
@@ -120,7 +102,4 @@ class ProfileController extends Controller
             'form' => $form->createView(),'user' => $user,
         ));
     }
-
-
-
 }

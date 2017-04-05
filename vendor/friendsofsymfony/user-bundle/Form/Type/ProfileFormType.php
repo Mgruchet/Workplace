@@ -16,7 +16,6 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Security\Core\Validator\Constraints\UserPassword;
-use Symfony\Component\Form\Extension\Core\Type\FileType;
 
 class ProfileFormType extends AbstractType
 {
@@ -48,12 +47,12 @@ class ProfileFormType extends AbstractType
             $constraintsOptions['groups'] = array(reset($options['validation_groups']));
         }
 
-        /*$builder->add('current_password', LegacyFormHelper::getType('Symfony\Component\Form\Extension\Core\Type\PasswordType'), array(
+        $builder->add('current_password', LegacyFormHelper::getType('Symfony\Component\Form\Extension\Core\Type\PasswordType'), array(
             'label' => 'form.current_password',
             'translation_domain' => 'FOSUserBundle',
             'mapped' => false,
             'constraints' => new UserPassword($constraintsOptions),
-        ));*/
+        ));
     }
 
     /**
@@ -95,7 +94,6 @@ class ProfileFormType extends AbstractType
     protected function buildUserForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('picture', FileType::class)
             ->add('username', null, array('label' => 'form.username', 'translation_domain' => 'FOSUserBundle'))
             ->add('firstname', null, array('label' => "Prénom d'utilsateur"))
             ->add('email', LegacyFormHelper::getType('Symfony\Component\Form\Extension\Core\Type\EmailType'), array('label' => 'form.email', 'translation_domain' => 'FOSUserBundle'))
