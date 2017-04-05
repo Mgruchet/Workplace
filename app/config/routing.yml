@@ -1,0 +1,11 @@
+mg_user:
+    resource: "@MGUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+mg_gestion:
+    resource: "@MGGestionBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

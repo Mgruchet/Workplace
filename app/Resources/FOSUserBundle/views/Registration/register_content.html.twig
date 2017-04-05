@@ -1,0 +1,24 @@
+{% extends '::base.html.twig' %}
+  {% block body %}
+    {% trans_default_domain 'FOSUserBundle' %}
+
+
+    <section class="index">
+      <article class="article_register">
+        <h1 class="title"><img src="{{asset('bundles/images/logo.png')}}" alt="image_logo" class="logo">Workplace</h1>
+        <p class="text_register">Déjà inscris ?</p>
+        <a class="register" href="{{ path('fos_user_security_login') }}">Se connecter</a>
+      </article>
+
+     {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'form'}}) }}
+          {{ form_widget(form, { 'attr': {'class': 'form_champ' }}) }}
+
+
+              <input class="btn_connection" type="submit" value="{{ 'registration.submit'|trans }}" />
+
+      {{ form_end(form) }}
+
+    </section>
+
+
+  {% endblock %}

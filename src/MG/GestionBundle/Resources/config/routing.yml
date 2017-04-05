@@ -1,0 +1,8 @@
+mg_gestion_homepage:
+    path:     /
+    defaults: { _controller: MGGestionBundle:Default:index }
+
+
+index:
+  path:    /index
+  defaults:    {_controller: MGGestionBundle:Advert:index}

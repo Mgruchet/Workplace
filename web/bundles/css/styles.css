@@ -1,0 +1,611 @@
+/*FONTS*/
+@font-face {
+  font-family: 'brandon_grotesqueblack';
+  src: url("../fonts/brandon/brandon_blk-webfont.eot");
+  src: url("../fonts/brandon/brandon_blk-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/brandon_blk-webfont.woff2") format("woff2"), url("../fonts/brandon/brandon_blk-webfont.woff") format("woff"), url("../fonts/brandon/brandon_blk-webfont.ttf") format("truetype"), url("../fonts/brandon/brandon_blk-webfont.svg#brandon_grotesqueblack") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'brandon_grotesquemedium';
+  src: url("../fonts/brandon/brandon_med-webfont.eot");
+  src: url("../fonts/brandon/brandon_med-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/brandon/brandon_med-webfont.woff2") format("woff2"), url("../fonts/brandon/brandon_med-webfont.woff") format("woff"), url("../fonts/brandon/brandon_med-webfont.ttf") format("truetype"), url("../fonts/brandon/brandon_med-webfont.svg#brandon_grotesquemedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* COLOR */
+/*--------------------
+---------------------*/
+* {
+  font-family: "brandon_grotesquemedium";
+}
+
+body {
+  background: #29292e;
+  margin: 0 auto;
+  width: 1170px;
+  position: relative;
+  background-image: url(../images/graph.png);
+  z-index: -999;
+}
+
+/*----------------
+    LES MIXINS
+-----------------*/
+.container {
+  width: 910px;
+  margin: 0 auto;
+  margin-right: 0px;
+}
+
+.btn_modification {
+  background-color: #1072EA;
+  border-radius: 100px;
+  border: 2px solid transparent;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 25px;
+  padding: 0 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: ease-in-out 0.3s;
+  width: 200px;
+}
+
+.btn_modification:hover {
+  background-color: transparent;
+  border: 2px solid #1072EA;
+}
+
+.flash-success {
+  color: #45FF73;
+  position: relative;
+  left: 300px;
+  top: 120px;
+}
+
+/*----------------
+    PAGE INDEX
+-----------------*/
+.index {
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 500px;
+  margin-top: 150px;
+}
+
+.index .description {
+  /*background-image: url(../images/background_description.png);
+    background-repeat: no-repeat;
+    background-position: center;*/
+  float: left;
+  line-height: 500px;
+  text-align: center;
+  width: 50%;
+}
+
+.index .description .title {
+  color: white;
+  font-size: 45px;
+  font-family: "brandon_grotesqueblack";
+  letter-spacing: 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.index .description .title .logo {
+  vertical-align: -10px;
+  margin-right: 15px;
+}
+
+.index .connection {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.index .connection .btn_connect {
+  background-color: #1072EA;
+  border-radius: 100px;
+  border: 2px solid transparent;
+  color: white;
+  display: block;
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+  letter-spacing: 5px;
+  margin: 190px auto 0 auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 80%;
+}
+
+.index .connection .btn_connect:hover {
+  border: 2px solid #1072EA;
+  background-color: transparent;
+  transition: ease-in-out 0.3s;
+}
+
+.index .connection .btn_disconnect {
+  background-color: #1072EA;
+  border-radius: 100px;
+  border: 2px solid transparent;
+  color: white;
+  display: block;
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+  letter-spacing: 5px;
+  margin: 20px auto 0 auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 80%;
+}
+
+.index .connection .btn_disconnect:hover {
+  border: 2px solid #1072EA;
+  background-color: transparent;
+  transition: ease-in-out 0.3s;
+}
+
+.index .article_register {
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+
+.index .article_register .title {
+  color: white;
+  font-size: 45px;
+  font-family: "brandon_grotesqueblack";
+  letter-spacing: 10px;
+  margin: 0;
+  margin-top: 180px;
+  text-transform: uppercase;
+}
+
+.index .article_register .title .logo {
+  vertical-align: -10px;
+  margin-right: 15px;
+}
+
+.index .article_register .text_register {
+  color: white;
+  font-size: 18px;
+}
+
+.index .article_register .register {
+  background-color: #1072EA;
+  border: 2px solid transparent;
+  border-radius: 100px;
+  color: white;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 200px;
+}
+
+.index .article_register .register:hover {
+  background-color: transparent;
+  border: 2px solid #1072EA;
+  transition: ease-in-out 0.3s;
+}
+
+.index .form {
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+
+.index .form .champ_form {
+  background: transparent;
+  border: 1px solid #1072EA;
+  color: #1072EA;
+  display: block;
+  font-size: 16px;
+  height: 50px;
+  margin: 0 auto;
+  padding-left: 15px;
+  text-transform: uppercase;
+  width: 250px;
+}
+
+.index .form #username {
+  margin-top: 170px;
+  margin-bottom: 20px;
+}
+
+.index .form #password {
+  margin-bottom: 20px;
+}
+
+.index .form .form_champ div {
+  position: relative;
+}
+
+.index .form .form_champ input[type=email] {
+  background: transparent;
+  border: 1px solid #1072EA;
+  color: #1072EA;
+  display: block;
+  font-size: 16px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 60px;
+  outline: none;
+  padding-left: 15px;
+  width: 90%;
+}
+
+.index .form .form_champ input[type=text] {
+  background: transparent;
+  border: 1px solid #1072EA;
+  color: #1072EA;
+  display: block;
+  font-size: 16px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 35px;
+  outline: none;
+  padding-left: 15px;
+  width: 90%;
+}
+
+.index .form .form_champ input[type=password] {
+  background: transparent;
+  border: 1px solid #1072EA;
+  color: #1072EA;
+  display: block;
+  font-size: 16px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 35px;
+  outline: none;
+  padding-left: 15px;
+  width: 90%;
+}
+
+.index .form .form_champ label {
+  color: white;
+  position: absolute;
+  left: 30px;
+  bottom: 50px;
+}
+
+.index .form .btn_connection {
+  background-color: #1072EA;
+  border-radius: 100px;
+  border: 2px solid transparent;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  height: 50px;
+  line-height: 50px;
+  letter-spacing: 5px;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 80%;
+}
+
+.index .form .btn_connection:hover {
+  border: 2px solid #1072EA;
+  background-color: transparent;
+  transition: ease-in-out 0.3s;
+}
+
+.index .form .remember {
+  color: white;
+}
+
+.index .error {
+  color: #f39468;
+  text-transform: uppercase;
+  margin-left: 40px;
+  padding-top: 25px;
+}
+
+.index .error .material-icons {
+  vertical-align: -7px;
+  margin-right: 10px;
+}
+
+/*--------------
+    BACK
+---------------*/
+.aside-left {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 100%;
+  overflow: hidden;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  width: 260px;
+  z-index: 11;
+}
+
+.aside-left .title {
+  font-size: 16px;
+  font-family: "brandon_grotesqueblack";
+  letter-spacing: 5px;
+  margin: 0;
+  margin-top: 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.aside-left .title .logo {
+  vertical-align: -25px;
+  margin-right: 15px;
+}
+
+.aside-left .title a {
+  color: white;
+  text-decoration: none;
+}
+
+.aside-left .sidebar {
+  padding-right: 20px;
+  margin-top: 20px;
+}
+
+.aside-left .sidebar .menu_aside ul {
+  margin: 0;
+  padding-left: 0px;
+  list-style: none;
+}
+
+.aside-left .sidebar .menu_aside ul li {
+  display: block;
+}
+
+.aside-left .sidebar .menu_aside ul li a {
+  padding: 15px 20px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  border-left: 5px solid transparent;
+}
+
+.aside-left .sidebar .menu_aside ul li a:hover {
+  border-left: 5px solid #1072EA;
+}
+
+.aside-left .sidebar .menu_aside ul li a .material-icons {
+  vertical-align: -4px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.aside-left .sidebar .menu_aside ul li .active {
+  border-left: 5px solid #1072EA;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 80px;
+}
+
+.header .header--user .img--user {
+  border-radius: 100px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px;
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+}
+
+.header .header--user .img--user img {
+  border-radius: 100px;
+  height: 100%;
+  width: 100%;
+}
+
+.header .header--user .text--user {
+  color: white;
+  line-height: 80px;
+  float: right;
+  margin: 0;
+  margin-right: 5px;
+  text-transform: uppercase;
+}
+
+.header .header--user .disconect--user {
+  color: white;
+  float: right;
+  margin-top: 25px;
+  margin-right: 30px;
+  margin-left: 80px;
+}
+
+.header:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.contenue--profile {
+  margin-left: 2%;
+}
+
+.contenue--profile .show--profile {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 8px 3px 15px 0px rgba(0, 0, 0, 0.3);
+  margin-top: 50px;
+  margin-right: 50px;
+  padding: 20px 0 20px 20px;
+  width: 98%;
+}
+
+.contenue--profile .show--profile .title--profile {
+  color: #f39468;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: "brandon_grotesqueblack";
+}
+
+.contenue--profile .show--profile .content__text .text--profile {
+  color: white;
+  float: left;
+  margin-right: 20px;
+}
+
+.contenue--profile .show--profile .content__text .text--profile span {
+  color: #f39468;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.contenue--profile .show--profile .content__text:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.contenue--profile .show--profile .content__btn .btn_modification {
+  float: left;
+  margin-right: 20px;
+}
+
+.contenue--profile .show--profile .content__btn:after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.contenue--profile .show--profile .form .form_champ div {
+  position: relative;
+  float: left;
+  width: 50%;
+  margin-top: 20px;
+}
+
+.contenue--profile .show--profile .form .form_champ div:first-child {
+  background-color: transparent;
+  border: 2px solid #1072EA;
+  height: 60px;
+  margin-bottom: 30px;
+  margin-left: 25px;
+  width: 95%;
+}
+
+.contenue--profile .show--profile .form .form_champ div:first-child label {
+  display: none;
+}
+
+.contenue--profile .show--profile .form .form_champ input[type=email] {
+  background: transparent;
+  border: 1px solid #1072EA;
+  color: #1072EA;
+  display: block;
+  font-size: 16px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  outline: none;
+  padding-left: 15px;
+  width: 90%;
+}
+
+.contenue--profile .show--profile .form .form_champ input[type=text] {
+  background: transparent;
+  border: 1px solid #1072EA;
+  color: #1072EA;
+  display: block;
+  font-size: 16px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  outline: none;
+  padding-left: 15px;
+  width: 90%;
+}
+
+.contenue--profile .show--profile .form .form_champ input[type=number] {
+  background: transparent;
+  border: 1px solid #1072EA;
+  color: #1072EA;
+  display: block;
+  font-size: 16px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  outline: none;
+  padding-left: 15px;
+  width: 90%;
+}
+
+.contenue--profile .show--profile .form .form_champ input[type=password] {
+  background: transparent;
+  border: 1px solid #1072EA;
+  color: #1072EA;
+  display: block;
+  font-size: 16px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  outline: none;
+  padding-left: 15px;
+  width: 90%;
+}
+
+.contenue--profile .show--profile .form .form_champ input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.contenue--profile .show--profile .form .form_champ label {
+  color: white;
+  position: absolute;
+  left: 25px;
+  bottom: 90px;
+}
+
+.contenue--profile .show--profile:after {
+  clear: both;
+  display: table;
+  content: '';
+}
+
+.contenue--profile .show--project {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 8px 3px 15px 0px rgba(0, 0, 0, 0.3);
+  margin-top: 30px;
+  padding: 20px 0 20px 20px;
+  width: 98%;
+}
+
+.contenue--profile .show--project .title--project {
+  color: #f39468;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: "brandon_grotesqueblack";
+}
+
+.contenue--profile .show--project .text--project {
+  color: white;
+}

@@ -1,0 +1,42 @@
+{% extends '::base.html.twig' %}
+{% block body %}
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% include 'header.html.twig' %}
+
+  <section>
+  {% include 'aside.html.twig' %}
+    <div class="container">
+      <section class="contenue--profile">
+        <article class="show--profile">
+            <h3 class="title--profile">Votre Profil</h3>
+            <div class="content__text">
+              <p class="text--profile">{{ 'profile.show.username'|trans }} : <span>{{ user.username }}</span></p>
+              <p class="text--profile">Prénom : <span>{{ user.firstname}}</span></p>
+              <p class="text--profile">{{ 'profile.show.email'|trans }} : <span>{{ user.email }}</span></p>
+              <p class="text--profile">Date de naissance : <span>{{ user.birthday}}</span></p>
+              <p class="text--profile">Numéro de téléphone : <span>{{ user.tel}}</span></p>
+              <p class="text--profile">Adresse : <span>{{ user.adresse}}</span></p>
+              <p class="text--profile">Ville : <span>{{ user.town}}</span></p>
+              <p class="text--profile">Code postale : <span>{{ user.cp}}</span></p>
+              <p class="text--profile">Pays : <span>{{ user.country}}</span></p>
+            </div>
+            <div class="content__btn">
+              <a class="btn_modification" href="{{path('fos_user_profile_edit')}}">Modifier votre profil</a>
+              <a class="btn_modification" href="{{path('fos_user_change_password')}}">Modifier votre Mot de passe</a>
+            </div>
+
+        </article>
+
+        <article class="show--project">
+          <h3 class="title--project">Vos derniers projets</h3>
+          <p class="text--project">{{ 'profile.show.username'|trans }}: {{ user.username }}</p>
+          <p class="text--project">{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
+        </article>
+      </section>
+    </div>
+  </section>
+
+
+
+{% endblock %}

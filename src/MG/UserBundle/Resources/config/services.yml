@@ -1,0 +1,5 @@
+services:
+    mguser.form.registration:
+        class: MG\UserBundle\Form\RegistrationType
+        tags:
+            - { name: form.type, alias: mg_user_registration }
