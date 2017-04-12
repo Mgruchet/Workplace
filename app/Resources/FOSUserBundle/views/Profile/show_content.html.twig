@@ -27,12 +27,12 @@
             </div>
 
         </article>
-
-        <article class="show--project">
-          <h3 class="title--project">Vos derniers projets</h3>
-          <p class="text--project">{{ 'profile.show.username'|trans }}: {{ user.username }}</p>
-          <p class="text--project">{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
-        </article>
+          <article class="show--picture">
+            <h3 class="title--profile">Votre image de Profil</h3>
+            <div class="images">
+              <img src="{{ asset('/bundles/images/' ~ app.user.picture) }}" alt="image de profil">
+            </div>
+          </article>
       </section>
     </div>
   </section>
