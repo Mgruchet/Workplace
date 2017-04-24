@@ -70,6 +70,12 @@ class clients
      */
     private $tel;
 
+    /**
+     * Many Client have One User.
+     * @ORM\ManyToOne(targetEntity="MG\UserBundle\Entity\User", inversedBy="clients")
+     * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     */
+    private $user;
 
     /**
      * Get id
@@ -248,13 +254,16 @@ class clients
     {
         return $this->tel;
     }
-    
+
+    public function setUser($user) {
+      $this->user = $user;
+    }
+
     public function getFullname() {
         return $this->getNom() . " " . $this->getPrenom();
     }
-    
+
     public function __toString() {
         return $this->getFullname();
     }
 }
-

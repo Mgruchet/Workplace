@@ -74,6 +74,12 @@ class User extends BaseUser
      */
     private $picture;
 
+    /**
+     * One User has Many Clients.
+     * @ORM\OneToMany(targetEntity="MG\GestionBundle\Entity\clients", mappedBy="user")
+     */
+    private $clients;
+
 
     public function __construct()
     {

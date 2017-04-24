@@ -24,7 +24,7 @@ class clientsController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $clients = $em->getRepository('MGGestionBundle:clients')->findAll();
+        $clients = $em->getRepository('MGGestionBundle:clients')->findByUser($this->getUser());
 
         return $this->render('clients/index.html.twig', array(
             'clients' => $clients,

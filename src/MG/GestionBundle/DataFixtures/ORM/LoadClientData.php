@@ -20,6 +20,7 @@ class LoadClientData extends AbstractFixture implements OrderedFixtureInterface
         $client1->setVille("Rennes");
         $client1->setCodePostal("35000");
         $client1->setTel("0254789564");
+        $client1->setUser($this->getReference("Maxime"));
 
         // Ajoute l'utilisateur dans Doctrine
         $manager->persist($client1);
@@ -38,6 +39,7 @@ class LoadClientData extends AbstractFixture implements OrderedFixtureInterface
         $client2->setVille("Saint-Malo");
         $client2->setCodePostal("35400");
         $client2->setTel("0287964853");
+        $client2->setUser($this->getReference("Kevin"));
 
         // Ajoute l'utilisateur dans Doctrine
         $manager->persist($client2);
@@ -56,7 +58,7 @@ class LoadClientData extends AbstractFixture implements OrderedFixtureInterface
         $client3->setVille("Paris");
         $client3->setCodePostal("75001");
         $client3->setTel("0244631245");
-
+        $client3->setUser($this->getReference("Medhi"));
         // Ajoute l'utilisateur dans Doctrine
         $manager->persist($client3);
 
@@ -71,6 +73,6 @@ class LoadClientData extends AbstractFixture implements OrderedFixtureInterface
 
     public function getOrder()
     {
-        return 1;
+        return 2;
     }
 }
