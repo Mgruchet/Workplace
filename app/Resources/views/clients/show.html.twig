@@ -1,56 +1,49 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Client</h1>
+{% trans_default_domain 'FOSUserBundle' %}
+{% include 'header.html.twig' %}
 
-    <table>
-        <tbody>
+<section>
+  {% include 'aside.html.twig' %}
+  <div class="container">
+    <section class="contenue--client">
+      <article class="show--client">
+        <h3 class="title--client"><i class="material-icons">person</i> {{ client.nom }} {{ client.prenom }}</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td class="text--client"><i class="material-icons">email</i> {{ client.mail }}</td>
+                    <td class="text--client"><i class="material-icons">location_on</i> {{ client.adresse }}</td>
+                    <td class="text--client"><i class="material-icons">location_on</i> {{ client.ville }}</td>
+                    <td class="text--client"><i class="material-icons">location_on</i> {{ client.codePostal }}</td>
+                    <td class="text--client"><i class="material-icons">phone</i> {{ client.tel }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <ul>
+            <li>
+                <a class="btn__edit" href="{{ path('clients_edit', { 'id': client.id }) }}">Modifier</a>
+            </li>
+            <li>
+                {{ form_start(delete_form) }}
+                    <input class="btn__supp" type="submit" value="Supprimer">
+                {{ form_end(delete_form) }}
+            </li>
+        </ul>
+      </article>
+      <article class="show--startprojet">
+        <h3>Projet à faire</h3>
+        <table>
+          <tbody>
             <tr>
-                <th>Id</th>
-                <td>{{ client.id }}</td>
+              <td>{{client.nom}} {{client.prenom}}</td>
             </tr>
-            <tr>
-                <th>Nom</th>
-                <td>{{ client.nom }}</td>
-            </tr>
-            <tr>
-                <th>Prenom</th>
-                <td>{{ client.prenom }}</td>
-            </tr>
-            <tr>
-                <th>Mail</th>
-                <td>{{ client.mail }}</td>
-            </tr>
-            <tr>
-                <th>Adresse</th>
-                <td>{{ client.adresse }}</td>
-            </tr>
-            <tr>
-                <th>Ville</th>
-                <td>{{ client.ville }}</td>
-            </tr>
-            <tr>
-                <th>Codepostal</th>
-                <td>{{ client.codePostal }}</td>
-            </tr>
-            <tr>
-                <th>Tel</th>
-                <td>{{ client.tel }}</td>
-            </tr>
-        </tbody>
-    </table>
+          </tbody>
+        </table>
+      </article>
+    </section>
+  </div>
+</section>
 
-    <ul>
-        <li>
-            <a href="{{ path('clients_index') }}">Back to the list</a>
-        </li>
-        <li>
-            <a href="{{ path('clients_edit', { 'id': client.id }) }}">Edit</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
 {% endblock %}

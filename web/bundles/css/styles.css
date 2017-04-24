@@ -28,7 +28,8 @@ body {
   margin: 0 auto;
   width: 1170px;
   position: relative;
-  background-image: url(../images/graph.png);
+  /*background-image: url(../images/graph.png);*/
+  background-color: #29292e;
   z-index: -999;
 }
 
@@ -670,6 +671,11 @@ body {
   font-family: "brandon_grotesqueblack";
 }
 
+.contenue--client .show--client .title--client .material-icons {
+  font-size: 45px;
+  vertical-align: -7px;
+}
+
 .contenue--client .show--client .text--client {
   color: white;
   font-size: 14px;
@@ -696,6 +702,7 @@ body {
   border-radius: 100px;
   border: 1px solid transparent;
   color: white;
+  cursor: pointer;
   display: block;
   font-size: 14px;
   height: 50px;
@@ -708,4 +715,23 @@ body {
 .contenue--client .show--client ul li .btn__supp:hover {
   background-color: transparent;
   border: 1px solid #f39468;
+}
+
+.contenue--client .show--client ul li .btn__edit {
+  background-color: #45FF73;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  color: white;
+  display: block;
+  font-size: 14px;
+  height: 50px;
+  padding: 0 20px;
+  line-height: 50px;
+  text-decoration: none;
+  transition: ease-in-out 0.3s;
+}
+
+.contenue--client .show--client ul li .btn__edit:hover {
+  background-color: transparent;
+  border: 1px solid #45FF73;
 }

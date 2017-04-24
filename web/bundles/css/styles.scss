@@ -14,7 +14,8 @@ body{
   margin: 0 auto;
   width: 1170px;
   position: relative;
-  background-image: url(../images/graph.png);
+  /*background-image: url(../images/graph.png);*/
+  background-color: $second_color;
   z-index: -999;
 }
 
@@ -595,6 +596,10 @@ body{
       text-transform: uppercase;
       font-size: 24px;
       font-family: $black;
+      .material-icons{
+        font-size: 45px;
+        vertical-align: -7px;
+      }
     }
     .text--client{
       color: white;
@@ -616,6 +621,7 @@ body{
           border-radius: 100px;
           border: 1px solid transparent;
           color: white;
+          cursor: pointer;
           display: block;
           font-size: 14px;
           height: 50px;
@@ -626,6 +632,23 @@ body{
           &:hover{
             background-color: transparent;
             border: 1px solid $third_color;
+          }
+        }
+        .btn__edit{
+          background-color: $success;
+          border-radius: 100px;
+          border: 1px solid transparent;
+          color: white;
+          display: block;
+          font-size: 14px;
+          height: 50px;
+          padding: 0 20px;
+          line-height: 50px;
+          text-decoration: none;
+          transition: ease-in-out 0.3s;
+          &:hover{
+            background-color: transparent;
+            border: 1px solid $success;
           }
         }
       }
