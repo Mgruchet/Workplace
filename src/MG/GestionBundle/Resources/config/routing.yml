@@ -6,3 +6,8 @@ mg_gestion_homepage:
 index:
   path:    /index
   defaults:    {_controller: MGGestionBundle:Advert:index}
+
+
+client:
+  path:    /client
+  defaults:    {_controller: MGGestionBundle:Client:client}
