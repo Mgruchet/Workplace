@@ -6,6 +6,14 @@
     <section>
         {% include 'aside.html.twig' %}
         <div class="container">
+            <section class="contenue--client">
+                <article class="show--client">
+                    <h3 class="title--client">Mes Clients</h3>
+                    {% for client in clients %}
+                        <p class="text--client">{{client.nom}} {{client.prenom}}</p>
+                    {% endfor %}
+                </article>
+            </section>
 
         </div>
     </section>

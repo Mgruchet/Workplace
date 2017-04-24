@@ -584,3 +584,24 @@ body{
     }
   }
 }
+.contenue--client{
+  margin-left: 2%;
+  .show--client{
+    background-color: rgba(black, 0.3);
+    box-shadow: 8px 3px 15px 0px rgba(black, 0.3);
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 20px 0 20px 20px;
+    width: 98%;
+    .title--client{
+      color: $third_color;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-family: $black;
+    }
+    .text--client{
+      color: white;
+    }
+  }
+}
