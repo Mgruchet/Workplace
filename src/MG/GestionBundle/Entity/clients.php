@@ -248,5 +248,13 @@ class clients
     {
         return $this->tel;
     }
+    
+    public function getFullname() {
+        return $this->getNom() . " " . $this->getPrenom();
+    }
+    
+    public function __toString() {
+        return $this->getFullname();
+    }
 }
 

@@ -1,0 +1,57 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+
+    {% trans_default_domain 'FOSUserBundle' %}
+
+    {% include 'header.html.twig' %}
+    <section>
+        {% include 'aside.html.twig' %}
+        <div class="container">
+
+            <h1>Projets list</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nom</th>
+                        <th>Avancement</th>
+                        <th>Created</th>
+                        <th>Updated</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for projet in projets %}
+                        <tr>
+                            <td><a href="{{ path('projet_show', { 'id': projet.id }) }}">{{ projet.id }}</a></td>
+                            <td>{{ projet.nom }}</td>
+                            <td>{% if projet.avancement %}Yes{% else %}No{% endif %}</td>
+                            <td>{% if projet.created %}{{ projet.created|date('Y-m-d H:i:s') }}{% endif %}</td>
+                            <td>{% if projet.updated %}{{ projet.updated|date('Y-m-d H:i:s') }}{% endif %}</td>
+                            <td>
+                                <ul>
+                                    <li>
+                                        <a href="{{ path('projet_show', { 'id': projet.id }) }}">show</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ path('projet_edit', { 'id': projet.id }) }}">edit</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+            <ul>
+                <li>
+                    <a href="{{ path('projet_new') }}">Create a new projet</a>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+{% endblock %}

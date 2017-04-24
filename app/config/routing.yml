@@ -1,3 +1,7 @@
+mg_gestion_projet:
+    resource: "@MGGestionBundle/Controller/projetController.php"
+    type:     annotation
+
 mg_user:
     resource: "@MGUserBundle/Resources/config/routing.yml"
     prefix:   /
