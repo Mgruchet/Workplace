@@ -31,7 +31,7 @@ class projet
     /**
      * @var bool
      *
-     * @ORM\Column(name="avancement", type="boolean")
+     * @ORM\Column(name="avancement", type="smallint")
      */
     private $avancement;
 
@@ -50,8 +50,10 @@ class projet
     private $updated;
 
     /**
-   * @ORM\ManyToOne(targetEntity="MG\GestionBundle\Entity\clients", cascade={"persist"})
-   */
+     * Many Projet have One Client.
+     * @ORM\ManyToOne(targetEntity="MG\GestionBundle\Entity\Clients", inversedBy="projets")
+     * @ORM\JoinColumn(name="clients_id", referencedColumnName="id")
+     */
     private $clients;
 
     /**

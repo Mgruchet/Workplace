@@ -2,6 +2,9 @@
 
 namespace MG\GestionBundle\Repository;
 
+
+use Doctrine\ORM\EntityRepository;
+use Doctrine\ORM\QueryBuilder;
 /**
  * clientsRepository
  *
@@ -10,4 +13,25 @@ namespace MG\GestionBundle\Repository;
  */
 class clientsRepository extends \Doctrine\ORM\EntityRepository
 {
+  public function getClientsWithProjet()
+  {
+    $qb = $this->createQueryBuilder('c');
+
+    // On fait une jointure avec l'entité Category avec pour alias « c »
+    $qb
+      ->join('p.clients', 'c')
+      ->addSelect('c')
+    ;
+
+    // Puis on filtre sur le nom des catégories à l'aide d'un IN
+    $qb->where($qb->expr()->in('c.name'));
+    // La syntaxe du IN et d'autres expressions se trouve dans la documentation Doctrine
+
+    // Enfin, on retourne le résultat
+    return $qb
+      ->getQuery()
+      ->getResult()
+    ;
+  }
+
 }

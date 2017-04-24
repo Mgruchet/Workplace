@@ -78,6 +78,17 @@ class clients
     private $user;
 
     /**
+     * One client has Many Projets.
+     * @ORM\OneToMany(targetEntity="MG\GestionBundle\Entity\projet", mappedBy="clients")
+     */
+    private $projets;
+
+    public function __construct()
+    {
+        $this->projets = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
      * Get id
      *
      * @return int
@@ -257,6 +268,32 @@ class clients
 
     public function setUser($user) {
       $this->user = $user;
+    }
+
+    public function getProjets() {
+      return $this->projets;
+    }
+
+    private function getProjectsByState($avancement) {
+      $finishedProjects = array();
+      foreach ($this->projets as $projet) {
+        if ($projet->getAvancement() == $avancement) {
+          array_push($finishedProjects, $projet);
+        }
+      }
+      return $finishedProjects;
+    }
+
+    public function getFinishedProjects() {
+      return $this->getProjectsByState(2);
+    }
+
+    public function getStartProjects() {
+      return $this->getProjectsByState(0);
+    }
+
+    public function getOngoingProjects() {
+      return $this->getProjectsByState(1);
     }
 
     public function getFullname() {

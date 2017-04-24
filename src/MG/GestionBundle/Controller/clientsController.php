@@ -26,6 +26,7 @@ class clientsController extends Controller
 
         $clients = $em->getRepository('MGGestionBundle:clients')->findByUser($this->getUser());
 
+
         return $this->render('clients/index.html.twig', array(
             'clients' => $clients,
         ));
@@ -39,7 +40,7 @@ class clientsController extends Controller
      */
     public function newAction(Request $request)
     {
-        $client = new Client();
+        $client = new clients();
         $form = $this->createForm('MG\GestionBundle\Form\clientsType', $client);
         $form->handleRequest($request);
 

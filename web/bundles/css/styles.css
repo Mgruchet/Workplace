@@ -32,9 +32,6 @@ body {
   z-index: -999;
 }
 
-/*----------------
-    LES MIXINS
------------------*/
 .container {
   width: 910px;
   margin: 0 auto;
@@ -675,4 +672,40 @@ body {
 
 .contenue--client .show--client .text--client {
   color: white;
+  font-size: 14px;
+  padding: 0 20px 0 0;
+}
+
+.contenue--client .show--client .text--client .material-icons {
+  font-size: 25px;
+  margin-right: 10px;
+  vertical-align: -4px;
+}
+
+.contenue--client .show--client ul {
+  padding: 0;
+}
+
+.contenue--client .show--client ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.contenue--client .show--client ul li .btn__supp {
+  background-color: #f39468;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  color: white;
+  display: block;
+  font-size: 14px;
+  height: 50px;
+  padding: 0 20px;
+  line-height: 50px;
+  text-decoration: none;
+  transition: ease-in-out 0.3s;
+}
+
+.contenue--client .show--client ul li .btn__supp:hover {
+  background-color: transparent;
+  border: 1px solid #f39468;
 }

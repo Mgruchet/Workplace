@@ -19,10 +19,6 @@ body{
 }
 
 
-/*----------------
-    LES MIXINS
------------------*/
-
 
 .container{
   width: 910px;
@@ -602,6 +598,38 @@ body{
     }
     .text--client{
       color: white;
+      font-size: 14px;
+      padding: 0 20px 0 0;
+      .material-icons{
+        font-size: 25px;
+        margin-right: 10px;
+        vertical-align: -4px;
+      }
     }
+    ul{
+      padding: 0;
+      li{
+        list-style: none;
+        display:inline-block;
+        .btn__supp{
+          background-color: $third_color;
+          border-radius: 100px;
+          border: 1px solid transparent;
+          color: white;
+          display: block;
+          font-size: 14px;
+          height: 50px;
+          padding: 0 20px;
+          line-height: 50px;
+          text-decoration: none;
+          transition: ease-in-out 0.3s;
+          &:hover{
+            background-color: transparent;
+            border: 1px solid $third_color;
+          }
+        }
+      }
+    }
+
   }
 }
