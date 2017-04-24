@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{% trans_default_domain 'FOSUserBundle' %}
+{% include 'header.html.twig' %}
+
+<section>
+  {% include 'aside.html.twig' %}
+  <div class="container">
+      <h1>Clients list</h1>
+
+      <table>
+          <thead>
+              <tr>
+                  <th>Id</th>
+                  <th>Nom</th>
+                  <th>Prenom</th>
+                  <th>Mail</th>
+                  <th>Adresse</th>
+                  <th>Ville</th>
+                  <th>Codepostal</th>
+                  <th>Tel</th>
+                  <th>Actions</th>
+              </tr>
+          </thead>
+          <tbody>
+          {% for client in clients %}
+              <tr>
+                  <td><a href="{{ path('clients_show', { 'id': client.id }) }}">{{ client.id }}</a></td>
+                  <td>{{ client.nom }}</td>
+                  <td>{{ client.prenom }}</td>
+                  <td>{{ client.mail }}</td>
+                  <td>{{ client.adresse }}</td>
+                  <td>{{ client.ville }}</td>
+                  <td>{{ client.codePostal }}</td>
+                  <td>{{ client.tel }}</td>
+                  <td>
+                      <ul>
+                          <li>
+                              <a href="{{ path('clients_show', { 'id': client.id }) }}">show</a>
+                          </li>
+                          <li>
+                              <a href="{{ path('clients_edit', { 'id': client.id }) }}">edit</a>
+                          </li>
+                      </ul>
+                  </td>
+              </tr>
+          {% endfor %}
+          </tbody>
+      </table>
+
+      <ul>
+          <li>
+              <a href="{{ path('clients_new') }}">Create a new client</a>
+          </li>
+      </ul>
+  </div>
+</section>
+
+{% endblock %}

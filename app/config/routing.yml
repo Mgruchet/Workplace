@@ -1,3 +1,7 @@
+mg_gestion_clients:
+    resource: "@MGGestionBundle/Controller/clientsController.php"
+    type:     annotation
+
 mg_gestion_projet:
     resource: "@MGGestionBundle/Controller/projetController.php"
     type:     annotation
