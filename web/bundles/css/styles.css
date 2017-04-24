@@ -651,3 +651,28 @@ body {
 .contenue--profile .show--project .text--project {
   color: white;
 }
+
+.contenue--client {
+  margin-left: 2%;
+}
+
+.contenue--client .show--client {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 8px 3px 15px 0px rgba(0, 0, 0, 0.3);
+  margin-top: 50px;
+  margin-right: 50px;
+  padding: 20px 0 20px 20px;
+  width: 98%;
+}
+
+.contenue--client .show--client .title--client {
+  color: #f39468;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: "brandon_grotesqueblack";
+}
+
+.contenue--client .show--client .text--client {
+  color: white;
+}
