@@ -47,3 +47,6 @@
 
 *.DS_Store
 composer.phar
+
+# Composer
+composer-setup.php
