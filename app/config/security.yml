@@ -19,7 +19,7 @@ security:
                 check_path:             fos_user_security_check
                 csrf_token_generator: security.csrf.token_manager
                 use_forward:      false
-                default_target_path: /profile
+                default_target_path: /dashboard
                 failure_path: null
             remember_me:
                 secret:   '%secret%'
