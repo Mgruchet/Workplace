@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+{% trans_default_domain 'FOSUserBundle' %}
+{% include 'header.html.twig' %}
+<section>
+  {% include 'aside.html.twig' %}
+  <div class="container">
+    <section class="contenue--dashboard">
+      <article class="show--dashboard">
+        <p class="main-text-dashboard">Bonjour <span>{{app.user.username}} {{app.user.firstname}}</span> et bienvenue sur <span>Workplace</span></p>
+        <p class="text--dashboard">
+          Sed tamen haec cum ita tutius observentur, quidam vigore artuum inminuto rogati ad nuptias ubi aurum dextris manibus cavatis offertur, inpigre vel usque Spoletium pergunt. haec nobilium sunt instituta.
+          Sed tamen haec cum ita tutius observentur, quidam vigore artuum inminuto rogati ad nuptias ubi aurum dextris manibus cavatis offertur, inpigre vel usque Spoletium pergunt. haec nobilium sunt instituta.
+          <br>
+          <br>
+          Sed tamen haec cum ita tutius observentur, quidam vigore artuum inminuto rogati ad nuptias ubi aurum dextris manibus cavatis offertur, inpigre vel usque Spoletium pergunt. haec nobilium sunt instituta.
+        </p>
+      </article>
+
+      <article class="show--dashboard">
+        <h3 class="title--dashboard">Mes derniers projets</h3>
+        <table>
+          <tbody>
+            {% for projet in projets %}
+            <tr>
+              <td class="text--dashboard">{{projet.nom}}</td>
+            </tr>
+            {% endfor %}
+
+
+          </tbody>
+        </table>
+      </article>
+
+    </section>
+  </div>
+</section>
+{% endblock %}

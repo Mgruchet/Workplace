@@ -740,3 +740,32 @@ body{
     }
   }
 }
+.contenue--dashboard{
+  margin-left: 2%;
+  .show--dashboard{
+    background-color: rgba(black, 0.3);
+    box-shadow: 8px 3px 15px 0px rgba(black, 0.3);
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 20px 0 20px 20px;
+    width: 98%;
+    .main-text-dashboard{
+      color: white;
+      font-size: 24px;
+      span{
+        color: $first_color;
+      }
+    }
+    .text--dashboard{
+      color: white;
+    }
+    .title--dashboard{
+      color: $third_color;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: $black;
+      margin: 0px 0 50px 0;
+    }
+  }
+}

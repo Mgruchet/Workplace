@@ -17,6 +17,7 @@ class LoadProjetData extends AbstractFixture implements OrderedFixtureInterface
         $projet1->setAvancement("1");
         $projet1->setCreated(new \DateTime("2017-01-12"));
         $projet1->setUpdated(new \DateTime("2017-01-22"));
+        $projet1->setUser($this->getReference('Maxime'));
 
         $this->addReference('projet1', $projet1);
 
@@ -30,6 +31,7 @@ class LoadProjetData extends AbstractFixture implements OrderedFixtureInterface
         $projet2->setAvancement("2");
         $projet2->setCreated(new \DateTime("2016-11-14"));
         $projet2->setUpdated(new \DateTime("2017-03-05"));
+        $projet2->setUser($this->getReference('Maxime'));
 
         $this->addReference('projet2', $projet2);
 
@@ -43,6 +45,7 @@ class LoadProjetData extends AbstractFixture implements OrderedFixtureInterface
         $projet3->setAvancement("0");
         $projet3->setCreated(new \DateTime("2017-04-01"));
         $projet3->setUpdated(new \DateTime("2017-04-01"));
+        $projet3->setUser($this->getReference('Maxime'));
 
         $this->addReference('projet3', $projet3);
 

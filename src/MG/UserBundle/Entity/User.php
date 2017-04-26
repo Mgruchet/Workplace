@@ -87,6 +87,10 @@ class User extends BaseUser
         // your own logic
     }
 
+    public function getId(){
+        return $this->id;
+    }
+
 
     /**
      * Set firstname

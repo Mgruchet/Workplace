@@ -64,7 +64,7 @@ class projet
     private $categorie;
 
     /**
-   * @ORM\ManyToOne(targetEntity="MG\GestionBundle\Entity\clients", cascade={"persist"})
+   * @ORM\ManyToOne(targetEntity="MG\UserBundle\Entity\User", cascade={"persist"})
    */
     private $user;
 

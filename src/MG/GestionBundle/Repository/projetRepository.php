@@ -10,4 +10,15 @@ namespace MG\GestionBundle\Repository;
  */
 class projetRepository extends \Doctrine\ORM\EntityRepository
 {
+  public function findProjet($user)
+  {
+    return $this->createQueryBuilder('proj')
+              ->join('proj.user', 'u')
+              ->where('u.id = :user_id')
+              ->orderBy('proj.created', 'DESC')
+              ->setMaxResults(3)
+              ->setParameter('user_id', $user->getId())
+              ->getQuery()
+              ->getResult();
+  }
 }
