@@ -13,6 +13,7 @@ class LoadProjetData extends AbstractFixture implements OrderedFixtureInterface
         $projet1 = new \MG\GestionBundle\Entity\projet();
         $projet1->setNom("Refonte graphique");
         $projet1->setClients($this->getReference("client1"));
+        $projet1->setCategorie();
         $projet1->setAvancement("1");
         $projet1->setCreated(new \DateTime("2017-01-12"));
         $projet1->setUpdated(new \DateTime("2017-01-22"));

@@ -43,11 +43,15 @@ class categories
     private $updated;
 
     /**
-   * @ORM\ManyToOne(targetEntity="MG\GestionBundle\Entity\projet", cascade={"persist"})
-   */
-    private $projet;
-
-
+     * One Category has Many Projects.
+     * @ORM\OneToMany(targetEntity="projet", mappedBy="categorie")
+     */
+    private $projets;
+    
+    function __construct() {
+        $this->projets = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+    
     /**
      * Get id
      *
@@ -130,11 +134,7 @@ class categories
         return $this->updated;
     }
 
-    public function setProjet($projet){
-      $this->projet = $projet;
-    }
-
-    public function getProjet(){
-      return $this->projet;
+    public function getProjets() {
+      return $this->projets;
     }
 }

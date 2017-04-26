@@ -57,6 +57,13 @@ class projet
     private $clients;
 
     /**
+     * Many Projet have One Category.
+     * @ORM\ManyToOne(targetEntity="categories", inversedBy="projets")
+     * @ORM\JoinColumn(name="categorie_id", referencedColumnName="id")
+     */
+    private $categorie;
+
+    /**
    * @ORM\ManyToOne(targetEntity="MG\GestionBundle\Entity\clients", cascade={"persist"})
    */
     private $user;
@@ -182,5 +189,13 @@ class projet
 
     public function getUser(){
       return $this->user;
+    }
+    
+    function getCategorie() {
+        return $this->categorie;
+    }
+
+    function setCategorie($categorie) {
+        $this->categorie = $categorie;
     }
 }

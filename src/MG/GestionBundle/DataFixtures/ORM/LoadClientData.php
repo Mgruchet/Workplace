@@ -30,7 +30,7 @@ class LoadClientData extends AbstractFixture implements OrderedFixtureInterface
 
 
 
-                // Création d'un nouvel utilisateur
+        // Création d'un nouvel utilisateur
         $client2 = new \MG\GestionBundle\Entity\clients();
         $client2->setNom("Doe");
         $client2->setPrenom("John");
@@ -49,7 +49,7 @@ class LoadClientData extends AbstractFixture implements OrderedFixtureInterface
 
 
 
-                // Création d'un nouvel utilisateur
+        // Création d'un nouvel utilisateur
         $client3 = new \MG\GestionBundle\Entity\clients();
         $client3->setNom("Peyrouny");
         $client3->setPrenom("Kevin");
