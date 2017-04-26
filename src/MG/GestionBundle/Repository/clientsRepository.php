@@ -13,13 +13,4 @@ use Doctrine\ORM\QueryBuilder;
  */
 class clientsRepository extends \Doctrine\ORM\EntityRepository
 {
-  public function findAvencementInClient()
-   {
-       return $this->createQueryBuilder('c')
-                   ->select('c')
-                   ->innerJoin('c.id a')
-                   ->where("a.avancement = 1")
-                   ->getQuery()
-                   ->getResult();
-   }
 }

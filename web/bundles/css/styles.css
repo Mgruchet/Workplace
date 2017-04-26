@@ -61,6 +61,46 @@ body {
   border: 2px solid #1072EA;
 }
 
+.btn__edit {
+  background-color: #45FF73;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  height: 50px;
+  padding: 0 20px;
+  line-height: 50px;
+  text-decoration: none;
+  transition: ease-in-out 0.3s;
+}
+
+.btn__edit:hover {
+  background-color: transparent;
+  border: 1px solid #45FF73;
+}
+
+.btn__supp {
+  background-color: #f39468;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  height: 50px;
+  padding: 0 20px;
+  line-height: 50px;
+  text-decoration: none;
+  transition: ease-in-out 0.3s;
+}
+
+.btn__supp:hover {
+  background-color: transparent;
+  border: 1px solid #f39468;
+}
+
 .flash-success {
   color: #45FF73;
   position: relative;
@@ -697,41 +737,52 @@ body {
   display: inline-block;
 }
 
-.contenue--client .show--client ul li .btn__supp {
-  background-color: #f39468;
-  border-radius: 100px;
-  border: 1px solid transparent;
+.contenue--client .show--client .form--client .champ--client {
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.contenue--client .show--client .form--client .champ--client label {
   color: white;
-  cursor: pointer;
+  padding-left: 5px;
+}
+
+.contenue--client .show--client .form--client .champ--client div {
+  float: left;
+}
+
+.contenue--client .show--client .form--client .champ--client input[type=text] {
+  background: transparent;
+  border: 1px solid #1072EA;
+  color: #1072EA;
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   height: 50px;
-  padding: 0 20px;
-  line-height: 50px;
-  text-decoration: none;
-  transition: ease-in-out 0.3s;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  outline: none;
+  padding-left: 15px;
+  width: 90%;
 }
 
-.contenue--client .show--client ul li .btn__supp:hover {
-  background-color: transparent;
-  border: 1px solid #f39468;
-}
-
-.contenue--client .show--client ul li .btn__edit {
-  background-color: #45FF73;
-  border-radius: 100px;
-  border: 1px solid transparent;
-  color: white;
+.contenue--client .show--client .form--client .champ--client input[type=number] {
+  background: transparent;
+  border: 1px solid #1072EA;
+  color: #1072EA;
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   height: 50px;
-  padding: 0 20px;
-  line-height: 50px;
-  text-decoration: none;
-  transition: ease-in-out 0.3s;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  outline: none;
+  padding-left: 15px;
+  width: 90%;
 }
 
-.contenue--client .show--client ul li .btn__edit:hover {
-  background-color: transparent;
-  border: 1px solid #45FF73;
+.contenue--client .show--client .form--client:after {
+  clear: both;
+  display: table;
+  content: '';
 }

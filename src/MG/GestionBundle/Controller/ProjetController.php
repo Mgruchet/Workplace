@@ -67,7 +67,7 @@ class ProjetController extends Controller
     {
         $deleteForm = $this->createDeleteForm($projet);
 
-        return $this->render('projet/show.html.twig', array(
+        return $this->render('MGGestionBundle:projet:show.html.twig', array(
             'projet' => $projet,
             'delete_form' => $deleteForm->createView(),
         ));
@@ -91,7 +91,7 @@ class ProjetController extends Controller
             return $this->redirectToRoute('projet_edit', array('id' => $projet->getId()));
         }
 
-        return $this->render('projet/edit.html.twig', array(
+        return $this->render('MGGestionBundle:projet:edit.html.twig', array(
             'projet' => $projet,
             'edit_form' => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
