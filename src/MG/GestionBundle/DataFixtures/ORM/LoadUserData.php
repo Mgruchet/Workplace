@@ -12,9 +12,9 @@ use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 
 class LoadUserData extends AbstractFixture implements FixtureInterface, ContainerAwareInterface, OrderedFixtureInterface
 {
-    
+
     private $container;
-    
+
     public function load(ObjectManager $manager)
     {
         // Get our userManager, you must implement `ContainerAwareInterface`
@@ -29,7 +29,7 @@ class LoadUserData extends AbstractFixture implements FixtureInterface, Containe
         $user->setEnabled(true);
         $user->setRoles(array('ROLE_ADMIN'));
         $user->setPicture("avatar.png");
-        
+
         // Update the user
         $userManager->updateUser($user, true);
 
@@ -38,9 +38,9 @@ class LoadUserData extends AbstractFixture implements FixtureInterface, Containe
 
         // Ajoute l'utilisateur dans Doctrine
         $manager->persist($user);
-        
-        
-        
+
+
+
         // Create our user and set details
         /* @var $user \MG\UserBundle\Entity\User */
         $user = $userManager->createUser();
@@ -50,7 +50,7 @@ class LoadUserData extends AbstractFixture implements FixtureInterface, Containe
         $user->setEnabled(true);
         $user->setRoles(array('ROLE_ADMIN'));
         $user->setPicture("avatar.png");
-        
+
         // Update the user
         $userManager->updateUser($user, true);
 
@@ -59,10 +59,10 @@ class LoadUserData extends AbstractFixture implements FixtureInterface, Containe
 
         // Ajoute l'utilisateur dans Doctrine
         $manager->persist($user);
-        
-        
-        
-        
+
+
+
+
         // Create our user and set details
         /* @var $user \MG\UserBundle\Entity\User */
         $user = $userManager->createUser();
@@ -71,8 +71,8 @@ class LoadUserData extends AbstractFixture implements FixtureInterface, Containe
         $user->setPlainPassword('maxime35');
         $user->setEnabled(true);
         $user->setRoles(array('ROLE_ADMIN'));
-        $user->setPicture("avatar.png");
-        
+        $user->setPicture("5c78c493200b8ba289a433d9c178ff7e.jpeg");
+
         // Update the user
         $userManager->updateUser($user, true);
 
@@ -81,11 +81,11 @@ class LoadUserData extends AbstractFixture implements FixtureInterface, Containe
 
         // Ajoute l'utilisateur dans Doctrine
         $manager->persist($user);
-        
-       
-        
-        
-        
+
+
+
+
+
         // Create our user and set details
         /* @var $user \MG\UserBundle\Entity\User */
         $user = $userManager->createUser();
@@ -95,7 +95,7 @@ class LoadUserData extends AbstractFixture implements FixtureInterface, Containe
         $user->setEnabled(true);
         $user->setRoles(array('ROLE_ADMIN'));
         $user->setPicture("avatar.png");
-        
+
         // Update the user
         $userManager->updateUser($user, true);
 
@@ -104,11 +104,11 @@ class LoadUserData extends AbstractFixture implements FixtureInterface, Containe
 
         // Ajoute l'utilisateur dans Doctrine
         $manager->persist($user);
-        
-       
-        
-        
-        
+
+
+
+
+
         // Create our user and set details
         /* @var $user \MG\UserBundle\Entity\User */
         $user = $userManager->createUser();
@@ -118,7 +118,7 @@ class LoadUserData extends AbstractFixture implements FixtureInterface, Containe
         $user->setEnabled(true);
         $user->setRoles(array('ROLE_ADMIN'));
         $user->setPicture("avatar.png");
-        
+
         // Update the user
         $userManager->updateUser($user, true);
 
@@ -127,8 +127,8 @@ class LoadUserData extends AbstractFixture implements FixtureInterface, Containe
 
         // Ajoute l'utilisateur dans Doctrine
         $manager->persist($user);
-        
-        
+
+
 
         // Executer les requêtes SQL
         $manager->flush();

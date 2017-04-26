@@ -190,7 +190,7 @@ class projet
     public function getUser(){
       return $this->user;
     }
-    
+
     function getCategorie() {
         return $this->categorie;
     }
