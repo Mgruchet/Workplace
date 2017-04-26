@@ -46,10 +46,11 @@ class clientsController extends Controller
 
         if ($form->isSubmitted() && $form->isValid()) {
             $em = $this->getDoctrine()->getManager();
+            $client->setUser($this->getUser());
             $em->persist($client);
             $em->flush($client);
 
-            return $this->redirectToRoute('clients_show', array('id' => $client->getId()));
+            return $this->redirectToRoute('clients_index', array('id' => $client->getId()));
         }
 
         return $this->render('clients/new.html.twig', array(

@@ -32,13 +32,44 @@
             </li>
         </ul>
       </article>
-      <article class="show--startprojet">
-        <h3>Projet à faire</h3>
+
+      <article class="show--projet">
+        <h4 class="title--projet"><i class="material-icons">check_box_outline_blank</i>Projet à faire</h4>
         <table>
           <tbody>
             <tr>
-              <td>{{client.nom}} {{client.prenom}}</td>
-              <td></td>
+              {% for projet in client.startProjects %}
+                <td class="text--projet"><i class="material-icons">folder_open</i> {{ projet.nom }}</td>
+                <td class="td--projet"><a href="{{ path('projet_show', { 'id': projet.id })}}">Consulter le projet</a></td>
+              {% endfor %}
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="show--projet">
+        <h4 class="title--projet"><i class="material-icons">indeterminate_check_box</i>Projet en cours</h4>
+        <table>
+          <tbody>
+            <tr>
+              {% for projet in client.ongoingProjects %}
+                <td class="text--projet"><i class="material-icons">folder_open</i> {{ projet.nom }}</td>
+                <td class="td--projet"><a class="btn__supp" href="{{ path('projet_show', { 'id': projet.id })}}">Consulter le projet</a></td>
+              {% endfor %}
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article class="show--projet">
+        <h4 class="title--projet"><i class="material-icons">check_box</i>Projet terminé</h4>
+        <table>
+          <tbody>
+            <tr>
+              {% for projet in client.finishedProjects %}
+                <td class="text--projet"><i class="material-icons">folder_open</i> {{ projet.nom }}</td>
+                <td class="td--projet"><a href="{{ path('projet_show', { 'id': projet.id })}}">Consulter le projet</a></td>
+              {% endfor %}
             </tr>
           </tbody>
         </table>

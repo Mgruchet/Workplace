@@ -222,4 +222,10 @@ class User extends BaseUser
        return $this->picture;
    }
 
+
+   public function getClients()
+  {
+      return $this->clients;
+  }
+
 }

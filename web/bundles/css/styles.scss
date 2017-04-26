@@ -704,4 +704,39 @@ body{
       }
     }
   }
+  .show--projet{
+    background-color: rgba(black, 0.3);
+    box-shadow: 8px 3px 15px 0px rgba(black, 0.3);
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 20px 0 20px 20px;
+    position: relative;
+    width: 98%;
+    .title--projet{
+      color: $third_color;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: $black;
+      margin: 0px 0 50px 0;
+      .material-icons{
+        font-size: 35px;
+        vertical-align: -10px;
+        margin-right: 10px;
+      }
+    }
+    .text--projet{
+      color: white;
+      font-size: 14px;
+      padding: 0 20px 0 0;
+      .material-icons{
+        vertical-align: -5px;
+      }
+    }
+    .td--projet{
+      position: absolute;
+      right: 40px;
+      bottom: 15px;
+    }
+  }
 }
