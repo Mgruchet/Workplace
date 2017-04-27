@@ -7,7 +7,7 @@
   {% include 'aside.html.twig' %}
   <div class="container">
     <section class="contenue--dashboard">
-      <article class="show--dashboard">
+      <article class="show--desc">
         <p class="main-text-dashboard">Bonjour <span>{{app.user.username}} {{app.user.firstname}}</span> et bienvenue sur <span>Workplace</span></p>
         <p class="text--dashboard">
           Sed tamen haec cum ita tutius observentur, quidam vigore artuum inminuto rogati ad nuptias ubi aurum dextris manibus cavatis offertur, inpigre vel usque Spoletium pergunt. haec nobilium sunt instituta.
@@ -24,11 +24,40 @@
           <tbody>
             {% for projet in projets %}
             <tr>
-              <td class="text--dashboard">{{projet.nom}}</td>
+              <td class="text--dashboard"><i class="material-icons">folder_open</i> {{projet.nom}}</td>
+              <td>
+                <ul>
+                  <li>
+                    <a class="btn__supp href="{{ path('projet_show', { 'id': projet.id })}}">Consulter le projet</a>
+                  </li>
+                </ul>
+              </td>
             </tr>
             {% endfor %}
+          </tbody>
+        </table>
+      </article>
 
+      <article class="show--dashboard">
+        <h3 class="title--dashboard">Mes derniers projets</h3>
+        <table>
+          <tbody>
+          {% for client in clients %}
+            <tr>
+              <td class="text--dashboard"><i class="material-icons">folder_open</i> {{client.nom}}</td>
+              <td class="text--dashboard"><i class="material-icons">check_box_outline_blank</i>Projets à faire {{ client.startProjects|length }}</td>
+              <td class="text--dashboard"><i class="material-icons">indeterminate_check_box</i>Projets en cour {{ client.ongoingProjects|length }}</td>
+              <td class="text--dashboard"><i class="material-icons">check_box</i>Projets terminé {{ client.finishedProjects|length }}</td>
+              <td class="td--projet">
+                <ul>
+                  <li>
+                    <a class="btn__supp href="{{ path('clients_show', { 'id': client.id }) }}">Consulter la fiche</a>
+                  </li>
+                </ul>
 
+              </td>
+            </tr>
+          {% endfor %}
           </tbody>
         </table>
       </article>

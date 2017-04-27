@@ -16,7 +16,9 @@ class DashboardController extends Controller
       $em = $this->getDoctrine()->getManager();
 
       $projets = $em->getRepository('MGGestionBundle:projet')->findProjet($this->getUser());
-      return $this->render('MGGestionBundle:Dashboard:dashboard.html.twig', array('projets' => $projets));
+      $clients = $em->getRepository('MGGestionBundle:clients')->findClient($this->getUser());
+
+      return $this->render('MGGestionBundle:Dashboard:dashboard.html.twig', array('projets' => $projets, 'clients' => $clients));
 
     }
 }

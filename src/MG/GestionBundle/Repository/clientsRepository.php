@@ -13,4 +13,15 @@ use Doctrine\ORM\QueryBuilder;
  */
 class clientsRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function findClient($user)
+    {
+        return $this->createQueryBuilder('cli')
+            ->join('cli.user', 'u')
+            ->where('u.id = :user_id')
+            ->orderBy('cli.created', 'DESC')
+            ->setMaxResults(3)
+            ->setParameter('user_id', $user->getId())
+            ->getQuery()
+            ->getResult();
+    }
 }

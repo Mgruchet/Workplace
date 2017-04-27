@@ -707,7 +707,7 @@ body{
   .show--projet{
     background-color: rgba(black, 0.3);
     box-shadow: 8px 3px 15px 0px rgba(black, 0.3);
-    margin-top: 50px;
+    margin-top: 10px;
     margin-right: 50px;
     padding: 20px 0 20px 20px;
     position: relative;
@@ -728,21 +728,21 @@ body{
     .text--projet{
       color: white;
       font-size: 14px;
-      padding: 0 20px 0 0;
       .material-icons{
         vertical-align: -5px;
       }
     }
-    .td--projet{
-      position: absolute;
-      right: 40px;
-      bottom: 15px;
+    tr{
+      td{
+        padding-right: 200px;
+        padding-bottom: 50px;
+      }
     }
   }
 }
 .contenue--dashboard{
   margin-left: 2%;
-  .show--dashboard{
+  .show--desc{
     background-color: rgba(black, 0.3);
     box-shadow: 8px 3px 15px 0px rgba(black, 0.3);
     margin-top: 50px;
@@ -758,6 +758,32 @@ body{
     }
     .text--dashboard{
       color: white;
+      .material-icons{
+        vertical-align: -5px;
+      }
+    }
+  }
+  .show--dashboard{
+    background-color: rgba(black, 0.3);
+    box-shadow: 8px 3px 15px 0px rgba(black, 0.3);
+    margin-top: 10px;
+    margin-right: 50px;
+    padding: 20px 0 20px 20px;
+    width: 98%;
+    .text--dashboard{
+      color: white;
+      padding: 0 20px 40px 0;
+      .material-icons{
+        vertical-align: -5px;
+      }
+    }
+    ul{
+      padding: 0 0 40px 0;
+      margin: 0px;
+      li{
+        list-style: none;
+        display:inline-block;
+      }
     }
     .title--dashboard{
       color: $third_color;
