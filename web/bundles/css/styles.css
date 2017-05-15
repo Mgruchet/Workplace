@@ -797,6 +797,14 @@ body {
   width: 98%;
 }
 
+.contenue--client .show--projet .title--project {
+  color: #f39468;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: "brandon_grotesqueblack";
+}
+
 .contenue--client .show--projet .title--projet {
   color: #f39468;
   letter-spacing: 10px;
@@ -824,6 +832,33 @@ body {
 .contenue--client .show--projet tr td {
   padding-right: 200px;
   padding-bottom: 50px;
+}
+
+.contenue--client .show--projet ul {
+  padding: 0px;
+}
+
+.contenue--client .show--projet ul li .btn__update {
+  background-color: #1072EA;
+  border-radius: 100px;
+  border: 2px solid transparent;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 25px;
+  padding: 0 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: ease-in-out 0.3s;
+  width: 250px;
+}
+
+.contenue--client .show--projet ul li .btn__update:hover {
+  background-color: transparent;
+  border: 2px solid #1072EA;
 }
 
 .contenue--dashboard {

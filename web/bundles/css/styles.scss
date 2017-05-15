@@ -712,6 +712,13 @@ body{
     padding: 20px 0 20px 20px;
     position: relative;
     width: 98%;
+    .title--project{
+      color: $third_color;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-family: $black;
+    }
     .title--projet{
       color: $third_color;
       letter-spacing: 10px;
@@ -738,6 +745,33 @@ body{
         padding-bottom: 50px;
       }
     }
+    ul{
+      padding: 0px;
+      li{
+        .btn__update{
+          background-color: $first_color;
+          border-radius: 100px;
+          border: 2px solid transparent;
+          color: white;
+          cursor: pointer;
+          display: block;
+          font-size: 18px;
+          height: 50px;
+          line-height: 50px;
+          margin-top: 25px;
+          padding: 0 20px;
+          text-align: center;
+          text-decoration: none;
+          transition: ease-in-out 0.3s;
+          width: 250px;
+          &:hover{
+            background-color: transparent;
+            border: 2px solid $first_color;
+          }
+        }
+      }
+    }
+
   }
 }
 .contenue--dashboard{
