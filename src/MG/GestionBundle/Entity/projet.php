@@ -68,6 +68,12 @@ class projet
    */
     private $user;
 
+    function __construct()
+    {
+        $this->setCreated(new \DateTime());
+        $this->setUpdated(new \DateTime());
+    }
+
 
     /**
      * Get id
@@ -174,6 +180,8 @@ class projet
     {
         return $this->updated;
     }
+
+
 
     public function setClients($clients){
       $this->clients = $clients;

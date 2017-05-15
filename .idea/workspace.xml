@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93e2af8b-9af7-4ec0-ac22-798d4fb01af8" name="Default" comment="finalisation dashboard">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MG/GestionBundle/Controller/ProjetController.php" afterPath="$PROJECT_DIR$/src/MG/GestionBundle/Controller/ProjetController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MG/GestionBundle/Entity/projet.php" afterPath="$PROJECT_DIR$/src/MG/GestionBundle/Entity/projet.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MG/GestionBundle/Form/projetType.php" afterPath="$PROJECT_DIR$/src/MG/GestionBundle/Form/projetType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/edit.html.twig" afterPath="$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/edit.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/new.html.twig" afterPath="$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/new.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/show.html.twig" afterPath="$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/show.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bundles/css/styles.css" afterPath="$PROJECT_DIR$/web/bundles/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bundles/css/styles.scss" afterPath="$PROJECT_DIR$/web/bundles/css/styles.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +17,18 @@
       <file leaf-file-name="projet.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/Entity/projet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="178" column="4" lean-forward="false" selection-start-line="178" selection-start-column="4" selection-end-line="178" selection-end-column="4" />
+            <state relative-caret-position="136">
+              <caret line="73" column="43" lean-forward="false" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clients.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/Entity/clients.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4896">
+              <caret line="342" column="54" lean-forward="false" selection-start-line="342" selection-start-column="54" selection-end-line="342" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -453,16 +455,15 @@
       <updated>1493303540449</updated>
       <workItem from="1493303569454" duration="3844000" />
       <workItem from="1494845044160" duration="111000" />
-      <workItem from="1494849648901" duration="12728000" />
+      <workItem from="1494849648901" duration="13611000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16683000" />
+    <option name="totallyTimeSpent" value="17566000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17864583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -647,14 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/Entity/clients.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="342" column="54" lean-forward="false" selection-start-line="342" selection-start-column="54" selection-end-line="342" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -814,10 +807,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/Entity/clients.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4896">
+          <caret line="342" column="54" lean-forward="false" selection-start-line="342" selection-start-column="54" selection-end-line="342" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/Entity/projet.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="178" column="4" lean-forward="false" selection-start-line="178" selection-start-column="4" selection-end-line="178" selection-end-column="4" />
+        <state relative-caret-position="136">
+          <caret line="73" column="43" lean-forward="false" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
           <folding />
         </state>
       </provider>
