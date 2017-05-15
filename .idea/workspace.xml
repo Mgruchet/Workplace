@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="93e2af8b-9af7-4ec0-ac22-798d4fb01af8" name="Default" comment="finalisation dashboard">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/clients/show.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/clients/show.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MG/GestionBundle/Controller/ProjetController.php" afterPath="$PROJECT_DIR$/src/MG/GestionBundle/Controller/ProjetController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/index.html.twig" afterPath="$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MG/GestionBundle/Entity/projet.php" afterPath="$PROJECT_DIR$/src/MG/GestionBundle/Entity/projet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MG/GestionBundle/Form/projetType.php" afterPath="$PROJECT_DIR$/src/MG/GestionBundle/Form/projetType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/edit.html.twig" afterPath="$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/new.html.twig" afterPath="$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/show.html.twig" afterPath="$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/show.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bundles/css/styles.css" afterPath="$PROJECT_DIR$/web/bundles/css/styles.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bundles/css/styles.scss" afterPath="$PROJECT_DIR$/web/bundles/css/styles.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bundles/prepros.cfg" afterPath="$PROJECT_DIR$/web/bundles/prepros.cfg" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,32 +22,22 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="styles.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/bundles/css/styles.scss">
+      <file leaf-file-name="projet.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/Entity/projet.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="748" column="19" lean-forward="false" selection-start-line="748" selection-start-column="19" selection-end-line="748" selection-end-column="19" />
-              <folding>
-                <element signature="e#93#143#0" expanded="false" />
-                <element signature="e#149#340#0" expanded="false" />
-                <element signature="e#354#412#0" expanded="false" />
-                <element signature="e#889#1246#0" expanded="false" />
-                <element signature="e#1257#1622#0" expanded="false" />
-                <element signature="e#1641#1714#0" expanded="false" />
-                <element signature="e#1776#6802#0" expanded="false" />
-                <element signature="e#6859#8262#0" expanded="false" />
-                <element signature="e#8270#9027#0" expanded="false" />
-                <element signature="e#9046#13525#0" expanded="false" />
-                <element signature="e#13579#15409#0" expanded="false" />
-                <element signature="e#14347#15405#0" expanded="false" />
-                <element signature="e#15654#15799#0" expanded="false" />
-                <element signature="e#15818#16106#0" expanded="false" />
-                <element signature="e#16124#16235#0" expanded="false" />
-                <element signature="e#16242#16327#0" expanded="false" />
-                <element signature="e#17011#18145#0" expanded="false" />
-                <element signature="e#17255#17354#0" expanded="false" />
-                <element signature="e#17966#18139#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="833">
+              <caret line="178" column="4" lean-forward="false" selection-start-line="178" selection-start-column="4" selection-end-line="178" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoadProjetData.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/DataFixtures/ORM/LoadProjetData.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="18" column="58" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="18" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,11 +56,15 @@
         <option value="$PROJECT_DIR$/app/Resources/views/clients/index.html.twig" />
         <option value="$PROJECT_DIR$/src/MG/GestionBundle/Controller/DashboardController.php" />
         <option value="$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/Dashboard/dashboard.html.twig" />
-        <option value="$PROJECT_DIR$/src/MG/GestionBundle/Entity/projet.php" />
-        <option value="$PROJECT_DIR$/src/MG/GestionBundle/Controller/ProjetController.php" />
-        <option value="$PROJECT_DIR$/web/bundles/css/styles.scss" />
         <option value="$PROJECT_DIR$/app/Resources/views/clients/show.html.twig" />
         <option value="$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/MG/GestionBundle/Controller/ProjetController.php" />
+        <option value="$PROJECT_DIR$/src/MG/GestionBundle/Form/projetType.php" />
+        <option value="$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/show.html.twig" />
+        <option value="$PROJECT_DIR$/web/bundles/css/styles.scss" />
+        <option value="$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/MG/GestionBundle/Entity/projet.php" />
       </list>
     </option>
   </component>
@@ -192,70 +188,6 @@
               <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projet" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Workplace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Workplace" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MG" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GestionBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Workplace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Workplace" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MG" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GestionBundle" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -280,6 +212,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Workplace" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Workplace" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MG" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GestionBundle" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataFixtures" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ORM" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -491,12 +453,12 @@
       <updated>1493303540449</updated>
       <workItem from="1493303569454" duration="3844000" />
       <workItem from="1494845044160" duration="111000" />
-      <workItem from="1494849648901" duration="4926000" />
+      <workItem from="1494849648901" duration="12728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8881000" />
+    <option name="totallyTimeSpent" value="16683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -544,22 +506,25 @@
             <element signature="e#93#143#0" expanded="false" />
             <element signature="e#149#340#0" expanded="false" />
             <element signature="e#354#412#0" expanded="false" />
+            <element signature="e#431#878#0" expanded="false" />
             <element signature="e#889#1246#0" expanded="false" />
-            <element signature="e#1257#1622#0" expanded="false" />
-            <element signature="e#1641#1714#0" expanded="false" />
-            <element signature="e#1776#6802#0" expanded="false" />
-            <element signature="e#6859#8262#0" expanded="false" />
-            <element signature="e#8270#9027#0" expanded="false" />
-            <element signature="e#9046#13525#0" expanded="false" />
-            <element signature="e#13579#15409#0" expanded="false" />
-            <element signature="e#14347#15405#0" expanded="false" />
-            <element signature="e#15654#15799#0" expanded="false" />
-            <element signature="e#15818#16106#0" expanded="false" />
-            <element signature="e#16124#16235#0" expanded="false" />
-            <element signature="e#16242#16327#0" expanded="false" />
-            <element signature="e#17011#18145#0" expanded="false" />
-            <element signature="e#17255#17354#0" expanded="false" />
-            <element signature="e#17966#18139#0" expanded="false" />
+            <element signature="e#1257#1660#0" expanded="false" />
+            <element signature="e#1679#1752#0" expanded="false" />
+            <element signature="e#1814#6840#0" expanded="false" />
+            <element signature="e#6897#8300#0" expanded="false" />
+            <element signature="e#8308#9065#0" expanded="false" />
+            <element signature="e#9084#13563#0" expanded="false" />
+            <element signature="e#15092#15422#0" expanded="false" />
+            <element signature="e#15788#17940#0" expanded="false" />
+            <element signature="e#16017#16162#0" expanded="false" />
+            <element signature="e#16187#16474#0" expanded="false" />
+            <element signature="e#16493#16780#0" expanded="false" />
+            <element signature="e#17117#17202#0" expanded="false" />
+            <element signature="e#17225#17279#0" expanded="false" />
+            <element signature="e#17286#17935#0" expanded="false" />
+            <element signature="e#17963#19097#0" expanded="false" />
+            <element signature="e#18207#18306#0" expanded="false" />
+            <element signature="e#18918#19091#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -596,22 +561,25 @@
             <element signature="e#93#143#0" expanded="false" />
             <element signature="e#149#340#0" expanded="false" />
             <element signature="e#354#412#0" expanded="false" />
+            <element signature="e#431#878#0" expanded="false" />
             <element signature="e#889#1246#0" expanded="false" />
-            <element signature="e#1257#1622#0" expanded="false" />
-            <element signature="e#1641#1714#0" expanded="false" />
-            <element signature="e#1776#6802#0" expanded="false" />
-            <element signature="e#6859#8262#0" expanded="false" />
-            <element signature="e#8270#9027#0" expanded="false" />
-            <element signature="e#9046#13525#0" expanded="false" />
-            <element signature="e#13579#15409#0" expanded="false" />
-            <element signature="e#14347#15405#0" expanded="false" />
-            <element signature="e#15654#15799#0" expanded="false" />
-            <element signature="e#15818#16106#0" expanded="false" />
-            <element signature="e#16124#16235#0" expanded="false" />
-            <element signature="e#16242#16327#0" expanded="false" />
-            <element signature="e#17011#18145#0" expanded="false" />
-            <element signature="e#17255#17354#0" expanded="false" />
-            <element signature="e#17966#18139#0" expanded="false" />
+            <element signature="e#1257#1660#0" expanded="false" />
+            <element signature="e#1679#1752#0" expanded="false" />
+            <element signature="e#1814#6840#0" expanded="false" />
+            <element signature="e#6897#8300#0" expanded="false" />
+            <element signature="e#8308#9065#0" expanded="false" />
+            <element signature="e#9084#13563#0" expanded="false" />
+            <element signature="e#15092#15422#0" expanded="false" />
+            <element signature="e#15788#17940#0" expanded="false" />
+            <element signature="e#16017#16162#0" expanded="false" />
+            <element signature="e#16187#16474#0" expanded="false" />
+            <element signature="e#16493#16780#0" expanded="false" />
+            <element signature="e#17117#17202#0" expanded="false" />
+            <element signature="e#17225#17279#0" expanded="false" />
+            <element signature="e#17286#17935#0" expanded="false" />
+            <element signature="e#17963#19097#0" expanded="false" />
+            <element signature="e#18207#18306#0" expanded="false" />
+            <element signature="e#18918#19091#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -648,35 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/clients/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/clients/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/Repository/projetRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="22" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/DataFixtures/ORM/LoadProjetData.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="58" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="18" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/DataFixtures/ORM/LoadClientData.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -708,14 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/clients/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/Entity/clients.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -724,10 +655,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/Entity/projet.php">
+    <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2499">
-          <caret line="183" column="5" lean-forward="false" selection-start-line="183" selection-start-column="5" selection-end-line="183" selection-end-column="5" />
+        <state relative-caret-position="306">
+          <caret line="24" column="57" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="57" />
           <folding />
         </state>
       </provider>
@@ -740,55 +671,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/Controller/ProjetController.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/clients/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/css/color.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/css/font.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="28" column="111" lean-forward="false" selection-start-line="28" selection-start-column="111" selection-end-line="28" selection-end-column="111" />
+          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/Controller/ProjetController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="71" column="5" lean-forward="false" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/clients/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="42" column="60" lean-forward="false" selection-start-line="42" selection-start-column="60" selection-end-line="42" selection-end-column="60" />
+        <state relative-caret-position="221">
+          <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/Form/projetType.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="55" column="75" lean-forward="false" selection-start-line="55" selection-start-column="75" selection-end-line="55" selection-end-column="75" />
+        <state relative-caret-position="221">
+          <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/clients/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="74" lean-forward="false" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/clients/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="44" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/Resources/views/projet/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/bundles/css/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="748" column="19" lean-forward="false" selection-start-line="748" selection-start-column="19" selection-end-line="748" selection-end-column="19" />
+        <state relative-caret-position="508">
+          <caret line="706" column="29" lean-forward="false" selection-start-line="706" selection-start-column="29" selection-end-line="706" selection-end-column="29" />
           <folding>
             <element signature="e#93#143#0" expanded="false" />
             <element signature="e#149#340#0" expanded="false" />
             <element signature="e#354#412#0" expanded="false" />
+            <element signature="e#431#878#0" expanded="false" />
             <element signature="e#889#1246#0" expanded="false" />
-            <element signature="e#1257#1622#0" expanded="false" />
-            <element signature="e#1641#1714#0" expanded="false" />
-            <element signature="e#1776#6802#0" expanded="false" />
-            <element signature="e#6859#8262#0" expanded="false" />
-            <element signature="e#8270#9027#0" expanded="false" />
-            <element signature="e#9046#13525#0" expanded="false" />
-            <element signature="e#13579#15409#0" expanded="false" />
-            <element signature="e#14347#15405#0" expanded="false" />
-            <element signature="e#15654#15799#0" expanded="false" />
-            <element signature="e#15818#16106#0" expanded="false" />
-            <element signature="e#16124#16235#0" expanded="false" />
-            <element signature="e#16242#16327#0" expanded="false" />
-            <element signature="e#17011#18145#0" expanded="false" />
-            <element signature="e#17255#17354#0" expanded="false" />
-            <element signature="e#17966#18139#0" expanded="false" />
+            <element signature="e#1257#1660#0" expanded="false" />
+            <element signature="e#1679#1752#0" expanded="false" />
+            <element signature="e#1814#6840#0" expanded="false" />
+            <element signature="e#6897#8300#0" expanded="false" />
+            <element signature="e#8308#9065#0" expanded="false" />
+            <element signature="e#9084#13563#0" expanded="false" />
+            <element signature="e#15092#15422#0" expanded="false" />
+            <element signature="e#15788#17940#0" expanded="false" />
+            <element signature="e#16017#16162#0" expanded="false" />
+            <element signature="e#16187#16474#0" expanded="false" />
+            <element signature="e#16493#16780#0" expanded="false" />
+            <element signature="e#17117#17202#0" expanded="false" />
+            <element signature="e#17225#17279#0" expanded="false" />
+            <element signature="e#17286#17935#0" expanded="false" />
+            <element signature="e#17963#19097#0" expanded="false" />
+            <element signature="e#18207#18306#0" expanded="false" />
+            <element signature="e#18918#19091#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/DataFixtures/ORM/LoadProjetData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="18" column="58" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="18" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/Repository/projetRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MG/GestionBundle/Entity/projet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="178" column="4" lean-forward="false" selection-start-line="178" selection-start-column="4" selection-end-line="178" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>

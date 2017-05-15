@@ -1,44 +1,57 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Projet</h1>
+    {% trans_default_domain 'FOSUserBundle' %}
 
-    <table>
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ projet.id }}</td>
-            </tr>
-            <tr>
-                <th>Nom</th>
-                <td>{{ projet.nom }}</td>
-            </tr>
-            <tr>
-                <th>Avancement</th>
-                <td>{% if projet.avancement %}Yes{% else %}No{% endif %}</td>
-            </tr>
-            <tr>
-                <th>Created</th>
-                <td>{% if projet.created %}{{ projet.created|date('Y-m-d H:i:s') }}{% endif %}</td>
-            </tr>
-            <tr>
-                <th>Updated</th>
-                <td>{% if projet.updated %}{{ projet.updated|date('Y-m-d H:i:s') }}{% endif %}</td>
-            </tr>
-        </tbody>
-    </table>
+    {% include 'header.html.twig' %}
+    <section>
+        {% include 'aside.html.twig' %}
+        <div class="container">
+            <section class="contenue--client">
+                <article class="show--projet">
+                    <table>
+                        <tbody>
+                        <tr class="table_show_projet">
+                            <td><h3 class="title--show--projet"><i class="material-icons">folder</i> {{ projet.nom }}</h3></td>
+                            <td><a class="btn__edit" href="{{ path('projet_edit', { 'id': projet.id }) }}">Modifier</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
 
-    <ul>
-        <li>
-            <a href="{{ path('projet_index') }}">Back to the list</a>
-        </li>
-        <li>
-            <a href="{{ path('projet_edit', { 'id': projet.id }) }}">Edit</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
+
+                    <p class="text--title">
+                        description du projet :
+                    </p>
+                    <p class="text--projet">
+                        Post quorum necem nihilo lenius ferociens Gallus ut leo cadaveribus
+                        pastus multa huius modi scrutabatur. quae singula narrare non refert,
+                        me professione modum, quod evitandum est, excedamus.
+                        Post quorum necem nihilo lenius ferociens Gallus ut leo cadaveribus
+                        pastus multa huius modi scrutabatur. quae singula narrare non refert,
+                        me professione modum, quod evitandum est, excedamus.
+                        <br>
+                        <br>
+                        Post quorum necem nihilo lenius ferociens Gallus ut leo cadaveribus
+                        pastus multa huius modi scrutabatur. quae singula narrare non refert,
+                        me professione modum, quod evitandum est, excedamus.
+                    </p>
+                </article>
+
+                <article class="show--projet">
+                    <p class="title--projet">
+                        Important
+                    </p>
+                    <p class="text--projet">
+                        Actuellement, votre projet est répertorié dans la catégorie <span>Projets en cours.</span>
+                        Ce n'est qu'une fois la <span>facture</span> réalisée que votre projet passera dans la catégorie <span>Projet Terminé.</span>
+                    </p>
+                </article>
+
+                <article class="show--projet">
+                    <a class="btn_modification" href="#!">Créer un devis</a>
+                </article>
+            </section>
+        </div>
+    </section>
+
 {% endblock %}
