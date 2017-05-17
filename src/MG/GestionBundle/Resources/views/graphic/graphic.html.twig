@@ -10,7 +10,7 @@
                 <article class="show--graphic">
                     <h3 class="title--graphic">Test graphique</h3>
 
-                    <canvas id="myChart" width="400" height="400"></canvas>
+                    <canvas id="myChart" width="400" height="400" data-url="{{ path('graphic_data') }}"></canvas>
 
                 </article>
             </section>
@@ -24,37 +24,46 @@
     <script type="text/javascript" src="{{ asset('bundles/js/Chart.min.js') }}"></script>
     <script>
         var ctx = document.getElementById("myChart");
-        var data = {
-            labels: [
-                "Red",
-                "Blue",
-                "Yellow"
-            ],
-            datasets: [
-                {
-                    data: [300, 50, 100],
-                    backgroundColor: [
-                        "#FF6384",
-                        "#36A2EB",
-                        "#FFCE56"
-                    ],
-                    hoverBackgroundColor: [
-                        "#FF6384",
-                        "#36A2EB",
-                        "#FFCE56"
-                    ]
-                }]
-        };
-        var options = {
-            animation:{
-                animateScale:true
+        var url = ctx.dataset.url;
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function(event, data) {
+            if (xhttp.readyState == XMLHttpRequest.DONE) {
+                var categories = JSON.parse(xhttp.response);
+                var labels = [];
+                for(var i = 0; i < categories.length; i++){
+                    labels.push(categories[i].nom);
+                }
+                var data = {
+                    labels: labels,
+                    datasets: [
+                        {
+                            data: [300, 50, 100],
+                            backgroundColor: [
+                                "#FF6384",
+                                "#36A2EB",
+                                "#FFCE56"
+                            ],
+                            hoverBackgroundColor: [
+                                "#FF6384",
+                                "#36A2EB",
+                                "#FFCE56"
+                            ]
+                        }]
+                };
+                var options = {
+                    animation:{
+                        animateScale:true
+                    }
+                };
+
+                var myLineChart = new Chart(ctx, {
+                    type: 'pie',
+                    data: data,
+                    options: options
+                });
             }
         };
-
-        var myLineChart = new Chart(ctx, {
-            type: 'pie',
-            data: data,
-            options: options
-        });
+        xhttp.open("GET", url, true);
+        xhttp.send();
         </script>
 {% endblock %}

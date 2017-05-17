@@ -6,6 +6,10 @@ mg_gestion_projet:
     resource: "@MGGestionBundle/Controller/projetController.php"
     type:     annotation
 
+mg_gestion_graphic:
+    resource: "@MGGestionBundle/Controller/GraphicController.php"
+    type:     annotation
+
 mg_user:
     resource: "@MGUserBundle/Resources/config/routing.yml"
     prefix:   /
