@@ -6,12 +6,55 @@
     <section>
         {% include 'aside.html.twig' %}
         <div class="container">
-            <section>
-                <article>
+            <section class="contenue--graphic">
+                <article class="show--graphic">
+                    <h3 class="title--graphic">Test graphique</h3>
+
+                    <canvas id="myChart" width="400" height="400"></canvas>
 
                 </article>
             </section>
         </div>
     </section>
 
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/javascript" src="{{ asset('bundles/js/Chart.min.js') }}"></script>
+    <script>
+        var ctx = document.getElementById("myChart");
+        var data = {
+            labels: [
+                "Red",
+                "Blue",
+                "Yellow"
+            ],
+            datasets: [
+                {
+                    data: [300, 50, 100],
+                    backgroundColor: [
+                        "#FF6384",
+                        "#36A2EB",
+                        "#FFCE56"
+                    ],
+                    hoverBackgroundColor: [
+                        "#FF6384",
+                        "#36A2EB",
+                        "#FFCE56"
+                    ]
+                }]
+        };
+        var options = {
+            animation:{
+                animateScale:true
+            }
+        };
+
+        var myLineChart = new Chart(ctx, {
+            type: 'pie',
+            data: data,
+            options: options
+        });
+        </script>
 {% endblock %}

@@ -973,3 +973,29 @@ body {
   font-family: "brandon_grotesqueblack";
   margin: 0px 0 50px 0;
 }
+
+.contenue--graphic {
+  margin-left: 2%;
+}
+
+.contenue--graphic .show--graphic {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 8px 3px 15px 0px rgba(0, 0, 0, 0.3);
+  margin-top: 50px;
+  margin-right: 50px;
+  padding: 20px 0 20px 20px;
+  width: 98%;
+}
+
+.contenue--graphic .show--graphic .title--graphic {
+  color: #f39468;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: "brandon_grotesqueblack";
+}
+
+.contenue--graphic .show--graphic .title--graphic .material-icons {
+  font-size: 45px;
+  vertical-align: -7px;
+}
