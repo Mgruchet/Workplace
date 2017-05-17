@@ -11,3 +11,9 @@ index:
 dashboard:
   path:    /dashboard
   defaults:    {_controller: MGGestionBundle:Dashboard:dashboard}
+
+
+graphic:
+  path:    /graphic
+  defaults:    {_controller: MGGestionBundle:Graphic:graphic}
+

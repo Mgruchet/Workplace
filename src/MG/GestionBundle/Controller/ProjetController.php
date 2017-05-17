@@ -24,10 +24,15 @@ class ProjetController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
 
-        $projets = $em->getRepository('MGGestionBundle:projet')->findAll();
+        $projets_satrt = $em->getRepository('MGGestionBundle:projet')->findBy(array('avancement' => 0, 'user' => $this->getUser()));
+        $projets_going = $em->getRepository('MGGestionBundle:projet')->findBy(array('avancement' => 1, 'user' => $this->getUser()));
+        $projets_finished = $em->getRepository('MGGestionBundle:projet')->findBy(array('avancement' => 2, 'user' => $this->getUser()));
+
 
         return $this->render('MGGestionBundle:projet:index.html.twig', array(
-            'projets' => $projets,
+            'projets_satrt' => $projets_satrt,
+            'projets_going' => $projets_going,
+            'projets_finished' => $projets_finished,
         ));
     }
 
@@ -65,6 +70,7 @@ class ProjetController extends Controller
      */
     public function showAction(projet $projet)
     {
+
         $deleteForm = $this->createDeleteForm($projet);
 
         return $this->render('MGGestionBundle:projet:show.html.twig', array(

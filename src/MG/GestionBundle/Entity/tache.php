@@ -43,6 +43,13 @@ class tache
     private $unite;
 
     /**
+     * @var decimal
+     *
+     * @ORM\Column(name="prix", type="decimal", precision=10, scale=2)
+     */
+    private $prix;
+
+    /**
    * @ORM\ManyToOne(targetEntity="MG\GestionBundle\Entity\facture", cascade={"persist"})
    */
     private $facture;
@@ -133,6 +140,24 @@ class tache
     {
         return $this->unite;
     }
+
+    /**
+     * @return decimal
+     */
+    public function getPrix()
+    {
+        return $this->prix;
+    }
+
+    /**
+     * @param decimal $prix
+     */
+    public function setPrix($prix)
+    {
+        $this->prix = $prix;
+    }
+
+
 
     public function setFacture($facture){
       $this->facture = $facture;

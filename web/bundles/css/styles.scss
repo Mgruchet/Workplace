@@ -77,7 +77,9 @@ body{
   padding: 0 20px;
   line-height: 50px;
   text-decoration: none;
+  text-align: center;
   transition: ease-in-out 0.3s;
+  width: 150px;
   &:hover{
     background-color: transparent;
     border: 1px solid $third_color;
@@ -666,9 +668,12 @@ body{
         label{
           color: white;
           padding-left: 5px;
+          position: absolute;
+          top: -20px;
         }
         div{
           float: left;
+          position: relative;
         }
         input[type=text]{
           background: transparent;
@@ -696,6 +701,15 @@ body{
           padding-left: 15px;
           width: 90%;
         }
+        select{
+          background-color: transparent;
+          border: 1px solid $first_color;
+          color: $first_color;
+          height: 54px;
+          padding: 0 20px;
+          width: 150px;
+          margin-left: 5px;
+        }
       }
       &:after{
         clear: both;
@@ -712,13 +726,33 @@ body{
     padding: 20px 0 20px 20px;
     position: relative;
     width: 98%;
+    .title--project{
+      color: $third_color;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-family: $black;
+    }
+    .title--show--projet{
+      color: $third_color;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: $black;
+      margin: 0px 0 0px 0;
+      .material-icons{
+        font-size: 35px;
+        vertical-align: -10px;
+        margin-right: 10px;
+      }
+    }
     .title--projet{
       color: $third_color;
       letter-spacing: 10px;
       text-transform: uppercase;
       font-size: 18px;
       font-family: $black;
-      margin: 0px 0 50px 0;
+      margin: 0px 0 0px 0;
       .material-icons{
         font-size: 35px;
         vertical-align: -10px;
@@ -731,6 +765,16 @@ body{
       .material-icons{
         vertical-align: -5px;
       }
+      span{
+        color: $first_color;
+        font-size: 16px;
+      }
+    }
+    .text--title{
+      color: white;
+      font-family: $black;
+      font-size: 16px;
+      text-transform: uppercase;
     }
     tr{
       td{
@@ -738,6 +782,38 @@ body{
         padding-bottom: 50px;
       }
     }
+    .table_show_projet{
+      td{
+        padding-right: 50px;
+      }
+    }
+    ul{
+      padding: 0px;
+      li{
+        .btn__update{
+          background-color: $first_color;
+          border-radius: 100px;
+          border: 2px solid transparent;
+          color: white;
+          cursor: pointer;
+          display: block;
+          font-size: 18px;
+          height: 50px;
+          line-height: 50px;
+          margin-top: 25px;
+          padding: 0 20px;
+          text-align: center;
+          text-decoration: none;
+          transition: ease-in-out 0.3s;
+          width: 250px;
+          &:hover{
+            background-color: transparent;
+            border: 2px solid $first_color;
+          }
+        }
+      }
+    }
+
   }
 }
 .contenue--dashboard{
@@ -792,6 +868,28 @@ body{
       font-size: 18px;
       font-family: $black;
       margin: 0px 0 50px 0;
+    }
+  }
+}
+.contenue--graphic{
+  margin-left: 2%;
+  .show--graphic{
+    background-color: rgba(black, 0.3);
+    box-shadow: 8px 3px 15px 0px rgba(black, 0.3);
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 20px 0 20px 20px;
+    width: 98%;
+    .title--graphic{
+      color: $third_color;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-family: $black;
+      .material-icons{
+        font-size: 45px;
+        vertical-align: -7px;
+      }
     }
   }
 }

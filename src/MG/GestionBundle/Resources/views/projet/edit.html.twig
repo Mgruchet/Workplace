@@ -1,21 +1,35 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Projet edit</h1>
+    {% trans_default_domain 'FOSUserBundle' %}
 
-    {{ form_start(edit_form) }}
-        {{ form_widget(edit_form) }}
-        <input type="submit" value="Edit" />
-    {{ form_end(edit_form) }}
+    {% include 'header.html.twig' %}
+    <section>
+        {% include 'aside.html.twig' %}
+        <div class="container">
+            <section class="contenue--client">
+                <article class="show--client">
+                    <h3 class="title--client">Modification des projets</h3>
 
-    <ul>
-        <li>
-            <a href="{{ path('projet_index') }}">Back to the list</a>
-        </li>
-        <li>
-            {{ form_start(delete_form) }}
-                <input type="submit" value="Delete">
-            {{ form_end(delete_form) }}
-        </li>
-    </ul>
+                    {{ form_start(edit_form, {'attr': {'class': 'form--client'}}) }}
+                    {{ form_widget(edit_form, {'attr': {'class': 'champ--client'}}) }}
+                    <br>
+                    <input class="btn__edit" type="submit" value="Modifier" />
+                    {{ form_end(edit_form) }}
+
+                    <ul>
+                        <li>
+                            <a class="btn_modification" href="{{ path('projet_index') }}">Retour au projet</a>
+                        </li>
+                        <li>
+                            {{ form_start(delete_form) }}
+                            <input class="btn__supp" type="submit" value="Supprimer">
+                            {{ form_end(delete_form) }}
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+    </section>
+
 {% endblock %}

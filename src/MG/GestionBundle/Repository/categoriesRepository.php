@@ -10,4 +10,18 @@ namespace MG\GestionBundle\Repository;
  */
 class categoriesRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function findCategories($user)
+    {
+        return $this->createQueryBuilder('test')
+            ->select('cat.nom', 'sum(tac.prix) as total')
+            ->from('MG\GestionBundle\Entity\tache', 'tac')
+            ->join('tac.facture', 'fac')
+            ->join('fac.projet', 'proj')
+            ->join( 'proj.categorie', 'cat')
+            ->where('proj.user = :user_id')
+            ->groupBy('cat.id')
+            ->setParameter('user_id', $user->getId())
+            ->getQuery()
+            ->getResult();
+    }
 }

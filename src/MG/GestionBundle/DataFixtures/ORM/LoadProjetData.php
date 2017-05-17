@@ -27,7 +27,7 @@ class LoadProjetData extends AbstractFixture implements OrderedFixtureInterface
         $projet2 = new \MG\GestionBundle\Entity\projet();
         $projet2->setNom("Dev application");
         $projet2->setClients($this->getReference("client2"));
-        $projet1->setCategorie($this->getReference("categorie2"));
+        $projet2->setCategorie($this->getReference("categorie3"));
         $projet2->setAvancement("2");
         $projet2->setCreated(new \DateTime("2016-11-14"));
         $projet2->setUpdated(new \DateTime("2017-03-05"));
@@ -41,7 +41,7 @@ class LoadProjetData extends AbstractFixture implements OrderedFixtureInterface
         $projet3 = new \MG\GestionBundle\Entity\projet();
         $projet3->setNom("Nouveau site e-commerce");
         $projet3->setClients($this->getReference("client3"));
-        $projet1->setCategorie($this->getReference("categorie2"));
+        $projet3->setCategorie($this->getReference("categorie3"));
         $projet3->setAvancement("0");
         $projet3->setCreated(new \DateTime("2017-04-01"));
         $projet3->setUpdated(new \DateTime("2017-04-01"));

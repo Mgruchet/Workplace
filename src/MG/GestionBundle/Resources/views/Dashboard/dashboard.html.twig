@@ -28,7 +28,7 @@
               <td>
                 <ul>
                   <li>
-                    <a class="btn__supp href="{{ path('projet_show', { 'id': projet.id })}}">Consulter le projet</a>
+                    <a class="btn__supp" href="{{ path('projet_show', { 'id': projet.id })}}">Consulter le projet</a>
                   </li>
                 </ul>
               </td>
@@ -39,7 +39,7 @@
       </article>
 
       <article class="show--dashboard">
-        <h3 class="title--dashboard">Mes derniers projets</h3>
+        <h3 class="title--dashboard">Mes derniers Clients</h3>
         <table>
           <tbody>
           {% for client in clients %}
@@ -51,7 +51,7 @@
               <td class="td--projet">
                 <ul>
                   <li>
-                    <a class="btn__supp href="{{ path('clients_show', { 'id': client.id }) }}">Consulter la fiche</a>
+                    <a class="btn__supp" href="{{ path('clients_show', { 'id': client.id }) }}">Consulter la fiche</a>
                   </li>
                 </ul>
 

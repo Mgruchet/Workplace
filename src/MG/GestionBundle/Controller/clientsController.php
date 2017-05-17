@@ -5,12 +5,13 @@ namespace MG\GestionBundle\Controller;
 use MG\GestionBundle\Entity\clients;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component\HttpFoundation\Request;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Client controller.
  *
- * @Route("clients")
+ * @Route("app/clients")
  */
 class clientsController extends Controller
 {
