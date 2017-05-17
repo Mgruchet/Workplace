@@ -50,9 +50,14 @@ composer.phar
 
 # Composer
 composer-setup.php
+<<<<<<< HEAD
 .idea/workspace.xml
 *.xml
 .idea/workspace.xml
+=======
+
+
+>>>>>>> origin/master
 
 
 # Created by https://www.gitignore.io/api/phpstorm
@@ -119,4 +124,8 @@ fabric.properties
 # Sonarlint plugin
 .idea/sonarlint
 
+<<<<<<< HEAD
 # End of https://www.gitignore.io/api/phpstorm
+=======
+# End of https://www.gitignore.io/api/phpstorm
+>>>>>>> origin/master
