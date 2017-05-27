@@ -13,6 +13,7 @@ class LoadCategorieData extends AbstractFixture implements OrderedFixtureInterfa
         
         $categorie1 = new \MG\GestionBundle\Entity\categories();
         $categorie1->setNom("Web Design");
+        $categorie1->setCouleur("#1072EA");
         $categorie1->setCreated(new \DateTime("2017-02-20"));
         $categorie1->setUpdated(new \DateTime("2017-02-22"));
 
@@ -24,6 +25,7 @@ class LoadCategorieData extends AbstractFixture implements OrderedFixtureInterfa
         
         $categorie2 = new \MG\GestionBundle\Entity\categories();
         $categorie2->setNom("Publication graphique");
+        $categorie2->setCouleur("#45FF73");
         $categorie2->setCreated(new \DateTime("2017-03-10"));
         $categorie2->setUpdated(new \DateTime("2017-03-10"));
 
@@ -35,6 +37,7 @@ class LoadCategorieData extends AbstractFixture implements OrderedFixtureInterfa
         
         $categorie3 = new \MG\GestionBundle\Entity\categories();
         $categorie3->setNom("Développement");
+        $categorie3->setCouleur("#f39468");
         $categorie3->setCreated(new \DateTime("2017-04-14"));
         $categorie3->setUpdated(new \DateTime("2017-04-20"));
 
@@ -46,6 +49,7 @@ class LoadCategorieData extends AbstractFixture implements OrderedFixtureInterfa
         
         $categorie4 = new \MG\GestionBundle\Entity\categories();
         $categorie4->setNom("PAO");
+        $categorie4->setCouleur("#9b59b6");
         $categorie4->setCreated(new \DateTime("2017-04-25"));
         $categorie4->setUpdated(new \DateTime("2017-04-25"));
 

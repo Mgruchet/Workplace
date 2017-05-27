@@ -17,7 +17,7 @@ class LoadTacheData extends AbstractFixture implements OrderedFixtureInterface {
         $tache1->setQuantite(2);
         $tache1->setUnite("heure");
         $tache1->setPrix(150);
-        $tache1->setFacture($this->getReference("facture1"));
+        $tache1->setFacture($this->getReference("facture2"));
 
         $this->addReference('tache1', $tache1);
 
@@ -55,7 +55,7 @@ class LoadTacheData extends AbstractFixture implements OrderedFixtureInterface {
         $tache4->setQuantite(6);
         $tache4->setUnite("heure");
         $tache4->setPrix(550);
-        $tache4->setFacture($this->getReference("facture1"));
+        $tache4->setFacture($this->getReference("facture2"));
 
         $this->addReference('tache4', $tache4);
 

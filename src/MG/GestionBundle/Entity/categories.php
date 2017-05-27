@@ -29,6 +29,13 @@ class categories
     private $nom;
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="couleur", type="string", length=255)
+     */
+    private $couleur;
+
+    /**
      * @var \DateTime
      *
      * @ORM\Column(name="created", type="datetime")
@@ -84,6 +91,30 @@ class categories
     public function getNom()
     {
         return $this->nom;
+    }
+
+    /**
+     * Set couleur
+     *
+     * @param string $couleur
+     *
+     * @return categories
+     */
+    public function setCouleur($couleur)
+    {
+        $this->couleur = $couleur;
+
+        return $this;
+    }
+
+    /**
+     * Get couleur
+     *
+     * @return string
+     */
+    public function getCouleur()
+    {
+        return $this->couleur;
     }
 
     /**

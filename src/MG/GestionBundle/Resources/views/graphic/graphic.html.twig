@@ -30,24 +30,25 @@
             if (xhttp.readyState == XMLHttpRequest.DONE) {
                 var categories = JSON.parse(xhttp.response);
                 var labels = [];
+                var datas =[];
+                var couleurs = [];
                 for(var i = 0; i < categories.length; i++){
                     labels.push(categories[i].nom);
+                }
+                for(var i = 0; i < categories.length; i++){
+                    datas.push(categories[i].total/4);
+                }
+
+                for(var i = 0; i < categories.length; i++){
+                    couleurs.push(categories[i].couleur);
                 }
                 var data = {
                     labels: labels,
                     datasets: [
                         {
-                            data: [300, 50, 100],
-                            backgroundColor: [
-                                "#FF6384",
-                                "#36A2EB",
-                                "#FFCE56"
-                            ],
-                            hoverBackgroundColor: [
-                                "#FF6384",
-                                "#36A2EB",
-                                "#FFCE56"
-                            ]
+                            data: datas,
+                            backgroundColor: couleurs,
+                            hoverBackgroundColor: couleurs
                         }]
                 };
                 var options = {
