@@ -315,6 +315,21 @@ body {
   width: 90%;
 }
 
+.index .form .form_champ input[type=file] {
+  background: transparent;
+  border: 1px solid #1072EA;
+  color: white;
+  display: block;
+  font-size: 16px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 35px;
+  outline: none;
+  padding-left: 15px;
+  padding-top: 10px;
+  width: 90%;
+}
+
 .index .form .form_champ label {
   color: white;
   position: absolute;

@@ -52,7 +52,7 @@ class RegistrationFormType extends AbstractType
                 'second_options' => array('label' => 'form.password_confirmation'),
                 'invalid_message' => 'fos_user.password.mismatch',
             ))
-            ->add('picture',FileType::class)
+            ->add('picture',FileType::class, array('label'=>'Votre image de profil'))
         ;
     }
 

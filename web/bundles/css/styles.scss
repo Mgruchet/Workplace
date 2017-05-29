@@ -276,7 +276,20 @@ body{
         outline: none;
         padding-left: 15px;
         width: 90%;
-
+      }
+      input[type=file]{
+        background: transparent;
+        border: 1px solid $first_color;
+        color: white;
+        display: block;
+        font-size: 16px;
+        height: 50px;
+        margin: 0 auto;
+        margin-top: 35px;
+        outline: none;
+        padding-left: 15px;
+        padding-top: 10px;
+        width: 90%;
       }
       label{
         color: white;
