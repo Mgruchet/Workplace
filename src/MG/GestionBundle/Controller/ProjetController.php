@@ -10,7 +10,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;use Symfony\Component
 /**
  * Projet controller.
  *
- * @Route("projet")
+ * @Route("app/projet")
  */
 class ProjetController extends Controller
 {

@@ -8,8 +8,5 @@ index:
   defaults:    {_controller: MGGestionBundle:Advert:index}
 
 
-dashboard:
-  path:    /dashboard
-  defaults:    {_controller: MGGestionBundle:Dashboard:dashboard}
 
 

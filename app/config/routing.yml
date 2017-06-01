@@ -10,6 +10,10 @@ mg_gestion_graphic:
     resource: "@MGGestionBundle/Controller/GraphicController.php"
     type:     annotation
 
+mg_gestion_dashboard:
+    resource: "@MGGestionBundle/Controller/DashboardController.php"
+    type:     annotation
+
 mg_user:
     resource: "@MGUserBundle/Resources/config/routing.yml"
     prefix:   /

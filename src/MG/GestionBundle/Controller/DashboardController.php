@@ -5,11 +5,26 @@
 namespace MG\GestionBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 
 
+
+/**
+ * dashboard controller.
+ *
+ * @Route("app/dashboard")
+ */
+
 class DashboardController extends Controller
 {
+
+    /**
+     * @Route("/", name="dashboard_index")
+     * @Method("GET")
+     */
+
     public function dashboardAction()
     {
 
