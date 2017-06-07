@@ -112,9 +112,9 @@ class LoadUserData extends AbstractFixture implements FixtureInterface, Containe
         // Create our user and set details
         /* @var $user \MG\UserBundle\Entity\User */
         $user = $userManager->createUser();
-        $user->setUsername('Medhi');
-        $user->setEmail('medhi.brodin@yopmail.com');
-        $user->setPlainPassword('medhi35');
+        $user->setUsername('Mehdi');
+        $user->setEmail('mehdi.brodin@yopmail.com');
+        $user->setPlainPassword('mehdi35');
         $user->setEnabled(true);
         $user->setRoles(array('ROLE_ADMIN'));
         $user->setPicture("avatar.png");
@@ -123,7 +123,7 @@ class LoadUserData extends AbstractFixture implements FixtureInterface, Containe
         $userManager->updateUser($user, true);
 
         // Conserve une référence à l'utilisateur
-        $this->addReference('Medhi', $user);
+        $this->addReference('Mehdi', $user);
 
         // Ajoute l'utilisateur dans Doctrine
         $manager->persist($user);

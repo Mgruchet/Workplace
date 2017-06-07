@@ -64,7 +64,7 @@ class LoadClientData extends AbstractFixture implements OrderedFixtureInterface
         $client3->setTel("0244631245");
         $client3->setCreated(new \DateTime("2017-01-12"));
         $client3->setUpdated(new \DateTime("2017-01-22"));
-        $client3->setUser($this->getReference("Medhi"));
+        $client3->setUser($this->getReference("Mehdi"));
         // Ajoute l'utilisateur dans Doctrine
         $manager->persist($client3);
 

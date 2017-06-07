@@ -86,6 +86,8 @@ class clients
     public function __construct()
     {
         $this->projets = new \Doctrine\Common\Collections\ArrayCollection();
+        $this->setCreated(new \DateTime());
+        $this->setUpdated(new \DateTime());
     }
 
     /**
