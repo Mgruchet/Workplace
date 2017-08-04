@@ -3,7 +3,7 @@ mg_gestion_clients:
     type:     annotation
 
 mg_gestion_projet:
-    resource: "@MGGestionBundle/Controller/projetController.php"
+    resource: "@MGGestionBundle/Controller/ProjetController.php"
     type:     annotation
 
 mg_gestion_graphic:
